@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7fa655dab34806a352306b11364de5, type: 3}
+  m_Name: Pumpkin
+  m_EditorClassIdentifier: 
+  itemName: Pumpkin
+  icon: {fileID: 21300000, guid: 50e1dfa8b16bbc64baf581f64d0dddee, type: 3}
+  stackable: 1
+  storePrice: 200
+  resellPrice: 170
+  iconHighlight: 0
+  timeToGrow: 300
+  count: 1
+  cropGrowData:
+  - sprite: {fileID: 21300000, guid: 19985a48b8c6d144ba736d2dabd02c5a, type: 3}
+    growthStageTime: 70
+  - sprite: {fileID: 21300000, guid: c8fd92f84ed658e4983cf60c4ff7bed2, type: 3}
+    growthStageTime: 80
+  - sprite: {fileID: 21300000, guid: 661c64bb5243e684f9c07f3704c4759b, type: 3}
+    growthStageTime: 80
+  - sprite: {fileID: 21300000, guid: 439c61357e86f254b97acc3f1189470e, type: 3}
+    growthStageTime: 70

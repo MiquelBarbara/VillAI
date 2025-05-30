@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf7910ff51a48dfa4acb2d1172a0c35, type: 3}
+  m_Name: Michael_MoodContainer
+  m_EditorClassIdentifier: 
+  loadMode: 1
+  saveMode: 1
+  saveInterval: 120
+  subFolder: Characters/Michael
+  maxEntries: 5
+  summary: Rocky's mixed emotions and desire to prove himself amidst his connection
+    with Michael lead to a newfound sense of accomplishment and pride, bridging gaps
+    in understanding abandoned technology. As he strives to create something meaningful
+    for Laia, combining cutting-edge tech with artisanal magic excites him, further
+    solidifying their bond.
+  entries:
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: The idea of creating something for Laia, a mix of cutting-edge technology
+      and artisanal magic, excites him
+  - Mood: 0
+    Context: 
+  actualMood: 0

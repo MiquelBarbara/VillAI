@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Elian
+  m_EditorClassIdentifier: 
+  characterName: Elian
+  icon: {fileID: 21300000, guid: 8bb6ee8b3f09e6646914fa09e882258f, type: 3}
+  age: 0
+  gender: 0
+  birthdate: 
+  appearance: He has long, curly, and somewhat messy light brown hair with traces
+    of dry earth. He always goes barefoot or wears rope sandals. He wears simple
+    tunics handmade from natural fibers, adorned with flowers, seeds, or small feathers
+    he finds on his walks.
+  personalityTraits: 0e0000001200000003000000
+  motivations: He wants to earn an honest living while protecting his family's land
+    and showing that living a simple and happy life is compatible.
+  background: 'Elian was born into a family of merchants who valued prestige, possessions,
+    and appearances. At 14, during a trading trip, he got lost in a forest and spent
+    days eating fruits and observing animals. That experience changed his life. He
+    renounced his inheritance and went to live in harmony with nature.
+
+
+
+    Over
+    the years, he earned the nickname "Roots" for his connection to the earth. He
+    communicates with animals as if they were old friends and has a special talent
+    for making even the most withered plant flourish. Many see him as an eccentric,
+    but those who get close to him discover a simple and profound wisdom.'
+  speechStyle: 0
+  otherInfo: 

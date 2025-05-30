@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 198e84b2b6f043209b91432fbbb5359a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - planPrompt: {fileID: 11400000, guid: 884b5b2672dfcb94e90b6c742e3b95c4, type: 2}
+  - goalPrompt: {fileID: 11400000, guid: bf358b7dab5ef994f8571fb43e9722bb, type: 2}
+  - beliefsPrompt: {fileID: 11400000, guid: 637664b2fb9dd4e4eb96ebd56715f9d8, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

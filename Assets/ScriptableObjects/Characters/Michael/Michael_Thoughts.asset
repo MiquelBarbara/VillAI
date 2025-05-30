@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 941daf6101f94b70a47134ef987eb458, type: 3}
+  m_Name: Michael_Thoughts
+  m_EditorClassIdentifier: 
+  loadMode: 1
+  saveMode: 1
+  saveInterval: 120
+  subFolder: Characters/Michael
+  maxEntries: 5
+  summary: A person reflects on their connection with Laia, wondering if a new camera
+    could deepen their bond. They're cautious about revealing too much information
+    to someone they don't fully understand. The individual yearns for genuine connections
+    and feels frustrated when others focus solely on appearance or material gain.
+  entries:
+  - Why does everyone think I'm just about appearance? Don't they see the real me?
+  - Why is it always about mining and minerals with him? Can't he see there's more
+    to life than just finding the next big thing?
+  - What does he want? Is he looking for trouble? Why doesn't he just leave me alone?
+  - He thinks I care about him... but why should I? He's always so focused on his
+    own goals, just like everyone else. I don't want to be like that, but it's hard
+    to connect with anyone who doesn't understand where I'm coming from.
+  - I wonder if she'll like the camera I've been building for her? It's not just
+    about taking pictures, it's about capturing the feeling of the moment...

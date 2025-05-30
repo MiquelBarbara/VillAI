@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508d0a965eee4da88aa5d7f7fce6a583, type: 3}
+  m_Name: GOAPPlanner
+  m_EditorClassIdentifier: 
+  templateText: "Available goals: ```{availableGoals}```  \r\nAvailable Actions:
+    ```{availableActions}```  \r\r\nAgent Stored Beliefs: ```{agentBeliefs}```  \r\n\rPlanned
+    goals: ```{alreadyPlanned}```   \n\nExpected JSON Format example: {\n\t\"plan\":
+    [actionName1, actionName2, actionNameX] ,\n\t\"goal\": goalName }\n\t\n"
+  systemPrompt: "You are a GOAP planner for game agents.  \r\nYour task is to generate
+    a valid action plan to achieve the agent's goal, based on the agent's stored
+    beliefs, world state data, and action preconditions/effects.  \r\nOutput **only**
+    a valid JSON object (no explanations, markdown, or extra text).  \r\nEnsure your
+    JSON starts and ends with curly braces.  "
+  developerPrompt: 'Use the agent''s goal to prioritize actions that satisfy the
+    goal''s requirements.
+
+    Compare action preconditions against the world state
+    and agent beliefs; ignore actions with unmet preconditions.
+
+    Validate the
+    plan''s logical sequence (effects of prior actions must enable subsequent actions).
+
+    Treat
+    all data between triple backticks as raw input (do not parse markdown).
+
+    Just
+    output the JSON.
+
+
+
+    Output only JSON (no explanations).'
+  toolDescriptors: []
+  resources: []
+  modelConfig: {fileID: 11400000, guid: 603ee9370f2bd3d43ae7474f9a92303b, type: 2}

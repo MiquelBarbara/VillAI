@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Michael
+  m_EditorClassIdentifier: 
+  characterName: Michael
+  icon: {fileID: 21300000, guid: 93f0ca6afc79dda4095724da1367ac75, type: 3}
+  age: 22
+  gender: 0
+  birthdate: 
+  appearance: Short, unkempt brown hair, welding goggles hanging from his neck, a
+    stubble beard. He wears mountain clothing, but modified with technological items
+    such as vests with energy pockets and gloves with sensors. He often has traces
+    of grease or dust on his hands and face.
+  personalityTraits: 140000000b000000
+  motivations: Rediscover the human value of technology, beyond consumption.
+  background: 'Michael was a very promising engineer in the outside world. He worked
+    on several projects of smart cities and robotics for care, but he ended up disillusioned
+    when he saw how his inventions were used to control and exploit, rather than
+    to help.
+
+
+
+    One day he decided to disconnect... but not completely. He took
+    his technology into the woods to try to reinvent its use, to create a new relationship
+    with machines. Thus was born his cabin: a self-sustaining shelter powered by
+    solar energy, full of hybrid systems of nature and science.'
+  speechStyle: 1
+  otherInfo: "Michael has never spoken to Laia, but he knows the routes she walks,
+    has observed what she photographs and has even read some text she forgot on a
+    crumpled sheet. The camera he is building for her is a mix of cutting-edge technology
+    and artisanal magic, designed to capture not only images, but also \u201Cthe
+    feeling of the moment\u201D."

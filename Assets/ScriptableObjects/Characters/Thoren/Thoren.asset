@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Thoren
+  m_EditorClassIdentifier: 
+  characterName: Thoren
+  icon: {fileID: 21300000, guid: 9242b3a359ed83c4ab867a321f60a3e8, type: 3}
+  age: 78
+  gender: 0
+  birthdate: 
+  appearance: Bald, long and well-groomed chin. Very light blue eyes, dull but deep,
+    always looking at the horizon as if looking for something lost. He wears old
+    and worn clothes, handmade by his wife. He always wears a scarf that she knitted.
+  personalityTraits: 0800000013000000
+  motivations: Preserve the memory and traditions of the island, and warn of the
+    dangers of losing one's roots.
+  background: "Thoren was born on the island when it was still a small, wild, and
+    mysterious place. With his wife Elira, they farmed the land, planted trees, and
+    raised children who are no longer here. When she died, a part of him crumbled,
+    but he didn\u2019t want to leave or change. He became a kind of guardian of memories,
+    a quiet voice in the hustle and bustle of the modern world.\r\n\r\nHe distrusts
+    change, new machines, straight roads, and cities. But he never says no outright;
+    he only asks, \u201CIs it really necessary?\u201D"
+  speechStyle: 0
+  otherInfo: 'When Thoren meets Laria, the first time his hands tremble at her voice.
+    Not from fear, but from the energy she gives off, so alive, so determined, that
+    it reminds him of his beloved Elira when he was young.
+
+    He starts looking
+    for excuses to talk to her, tell her stories, or simply share silence. He doesn''t
+    want to replace anyone, just to feel that what he loved can still flourish in
+    someone else.'

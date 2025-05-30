@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Laria
+  m_EditorClassIdentifier: 
+  characterName: Laia
+  icon: {fileID: 21300000, guid: e4da7d39b88da6c48b442052f91bdae5, type: 3}
+  age: 21
+  gender: 1
+  birthdate: 
+  appearance: "Laialu is a black-haired woman who is 1.48 tall, always dresses in
+    vintage clothes and loves\_to\_wear\_skirts."
+  personalityTraits: 0000000014000000
+  motivations: "She loves taking photographs, especially of nature. For her this
+    is a disconnection from the real world and an approach to what she wants to be,
+    one more in the\_cycle\_of\_life."
+  background: "As a child she lived in the big city of near VillAI island but as
+    she got older she understood that for her that city was a cage. When she freed
+    himself, he discovered the challenges that the outside world offered him and
+    she\_was\_excited."
+  speechStyle: 1
+  otherInfo: She is currently going through difficult times as her work as a woodcutter
+    comes into conflict with her love for nature, although little by little she will
+    realize that her thoughts and actions are not so contradictory.

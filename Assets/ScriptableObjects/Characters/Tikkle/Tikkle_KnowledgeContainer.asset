@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e21849e712464a8cc2346df2ce2f97, type: 3}
+  m_Name: Tikkle_KnowledgeContainer
+  m_EditorClassIdentifier: 
+  loadMode: 1
+  saveMode: 1
+  saveInterval: 120
+  subFolder: Characters/Tikkle
+  maxEntries: 5
+  summary: This shiny sphere, possibly made by humans, features unique patterns on
+    its surface. Their interactions highlight the importance of appreciation and
+    gratitude, while their reliance on math to understand the world contrasts with
+    a desire for more. Humans often express gratitude when parting ways, and may
+    use math as a game-like tool.
+  entries:
+  - 
+  - Humans often feel overwhelmed when facing deadlines. It's natural.
+  - Humans are so weird...

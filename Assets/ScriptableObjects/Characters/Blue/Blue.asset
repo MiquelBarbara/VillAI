@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Blue
+  m_EditorClassIdentifier: 
+  characterName: Blue
+  icon: {fileID: 21300000, guid: 01f015c152dea3a41b7966d29a5ab282, type: 3}
+  age: 14
+  gender: 0
+  birthdate: 
+  appearance: Short, messy, blue-gray hair, large, bright eyes with a curious look.
+    He wears a work jumpsuit tailored to his size, full of pockets to store small
+    tools and components. His hands are scarred from spending hours with metal and
+    circuits. He always wears a torn glove that Vulkan gave him.
+  personalityTraits: 0f00000003000000
+  motivations: To become a great inventor and builder, like Vulkan. He wants to be
+    recognized by him, not as a son, but as an equal.
+  background: 'Blue was found in the rubble of an ancient settlement after a structural
+    collapse. Vulkan, who was inspecting the area for reusable parts, heard soft
+    knocks inside a box half-covered with scrap metal. Inside, was a small child,
+    dehydrated but alive, clutching a small toy flashlight.
+
+
+
+    Vulkan didn''t
+    hesitate: he took him home and raised him as his own. Since then, Blue has become
+    his shadow, observing, learning, and helping at the forge. Despite his age, he
+    is skilled and creative, and has already built useful gadgets such as folding
+    mechanical arms or small reconnaissance drones.'
+  speechStyle: 3
+  otherInfo: 'Vulkan never wanted to impose himself as a father, but Blue considers
+    him her role model. Vulkan sees in Blue a reflection of the decisions he makes:
+    if Blue becomes corrupt, it is a sign that perhaps he has strayed from the right
+    path. But if he flourishes, it will mean that the legacy he is building is worthy.'

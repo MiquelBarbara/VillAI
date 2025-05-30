@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9155d2e0e0614c32894d7243d6c9a2b6, type: 3}
+  m_Name: BeetrotSeed
+  m_EditorClassIdentifier: 
+  itemName: Beetrot Seed
+  icon: {fileID: 21300000, guid: f3384935b37f5724584c17480a83b8a4, type: 3}
+  stackable: 1
+  storePrice: 7
+  resellPrice: 3
+  iconHighlight: 0
+  cropToPlant: {fileID: 11400000, guid: b02069a105664fc478d50cf959531416, type: 2}

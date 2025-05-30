@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5891735385209492887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6f0ff0a0714b2295fdebd3cfbe5eee, type: 3}
+  m_Name: Group_Player
+  m_EditorClassIdentifier: 
+  withCharacter: Player
+  entries:
+  - {fileID: 3682116952314234013}
+  - {fileID: 6825883510314909945}
+  - {fileID: 8151202920706081633}
+  - {fileID: 4561750115084598432}
+  - {fileID: -2901577860298628212}
+--- !u!114 &-2901577860298628212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_bbf1224e
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Rocky\Conversations\Player
+  maxEntries: 5
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hello Rocky
+    Timestamp: 40386.66
+  - Speaker: Rocky
+    Text: Whaddaya mean, 'hello'? You're talkin' to me? Ha! No one ever gave me a
+      chance to say hello. What's there to chat about?
+    Timestamp: 40549.598
+  - Speaker: Player
+    Text: I think that Elian is talking trash about you
+    Timestamp: 43011.848
+  - Speaker: Rocky
+    Text: I know Elian thinks he's tough, but I've been through worse and come out
+      on top. Bring it on if that's what he wants.
+    Timestamp: 43232.523
+  - Speaker: Player
+    Text: Wow wow hold up buddy. You need to calm down
+    Timestamp: 45135.234
+  - Speaker: Rocky
+    Text: Dude, chill out! I'm tryin' to help you find that mineral! You're gettin'
+      all worked up over nothin'
+    Timestamp: 45358.39
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aab7242e88c4af8993b62e70c825221, type: 3}
+  m_Name: Rocky_ConversationContainer
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: C:/Users/usuario/AppData/LocalLow/DefaultCompany/TFGRepo/Characters/Rocky
+  conversations:
+  - {fileID: -5891735385209492887}
+--- !u!114 &3682116952314234013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_ff98a8ac
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Rocky\Conversations\Player
+  maxEntries: 5
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Bye
+    Timestamp: 40352.555
+  - Speaker: Rocky
+    Text: Bye, pal! See ya 'round these parts.
+    Timestamp: 40452.68
+--- !u!114 &4561750115084598432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_dcc953d4
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Rocky\Conversations\Player
+  maxEntries: 5
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hi
+    Timestamp: 40332.555
+  - Speaker: Rocky
+    Text: Hey, what's up?
+    Timestamp: 40426.61
+  - Speaker: Player
+    Text: Just wanted to say hi to you
+    Timestamp: 41092.66
+  - Speaker: Rocky
+    Text: Hey, thanks for reachin' out! I'm doin' alright, just gettin' my hands
+      dirty in the mines. You know how it is. How 'bout you?
+    Timestamp: 41350.645
+  - Speaker: Player
+    Text: Yeah i am trying to earn some money here
+    Timestamp: 42451.01
+  - Speaker: Rocky
+    Text: Dude, I'm all about gettin' that mineral too! But we gotta make sure we're
+      doin' it safe and smart. Don't wanna risk our necks or hurt nobody. We can
+      work together on this, yeah?
+    Timestamp: 42652.664
+  - Speaker: Player
+    Text: Yes, I have to go, see you later
+    Timestamp: 44185.613
+  - Speaker: Rocky
+    Text: See you, Player. I'll be back to those mines in no time, and maybe then
+      I'll show you my latest discovery.
+    Timestamp: 44393.203
+--- !u!114 &6825883510314909945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_7e71fc21
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Rocky\Conversations\Player
+  maxEntries: 5
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: hi
+    Timestamp: 40244.168
+  - Speaker: Rocky
+    Text: What's up, Player? I'm Rocky. Just digging some new paths in the mines.
+      You know, trying to find that one rare mineral that'll make my dad proud. He
+      never thought I had what it takes since I was a kid. But hey, I got this whole
+      hearing thing going on now. It's like having a superpower!
+    Timestamp: 41103.094
+  - Speaker: Player
+    Text: Bye
+    Timestamp: 42432.453
+  - Speaker: Rocky
+    Text: Bye, Player. I'll be back in the mines, trying to find that hard mineral.
+      See you around.
+    Timestamp: 42631.703
+--- !u!114 &8151202920706081633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_4991ab89
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Rocky\Conversations\Player
+  maxEntries: 5
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hi, how you doing?
+    Timestamp: 41009.965
+  - Speaker: Rocky
+    Text: Hey, I'm doin' alright. Been thinkin' about those minerals a lot lately.
+    Timestamp: 41273.094
+  - Speaker: Player
+    Text: Minerals?
+    Timestamp: 41971.508
+  - Speaker: Rocky
+    Text: What minerals? You think I'm just sitting around all day, waiting for someone
+      to ask me about rocks? Get real.
+    Timestamp: 42104.645
+  - Speaker: Player
+    Text: Who are you?
+    Timestamp: 43215.22
+  - Speaker: Rocky
+    Text: '{"Who''s asking? You think you''re worthy of knowing me, huh?"}'
+    Timestamp: 43318.336
+  - Speaker: Player
+    Text: Oh sorry, see you later
+    Timestamp: 44865.508
+  - Speaker: Rocky
+    Text: Ha! You think you're done with me already? I'm just getting started, pal.
+      See you later, indeed.
+    Timestamp: 44975.91

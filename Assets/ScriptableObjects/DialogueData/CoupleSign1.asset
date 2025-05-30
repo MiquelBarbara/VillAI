@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ff2150eb30a964d8e8eae3f9617e59, type: 3}
+  m_Name: CoupleSign1
+  m_EditorClassIdentifier: 
+  line:
+  - Hello my name is Mr.Sign.
+  - I got married with the love of my live 20 years ago.
+  - It is a pretty static life here, but i can't regret anything.
+  - 'Sometimes it''s not easy to talk to my wife I whink we have a problem of comunication. '
+  - Oh, sorry... I don't want to borrow you.
+  - If you need something I will still here you know...
+  characterData: {fileID: 0}

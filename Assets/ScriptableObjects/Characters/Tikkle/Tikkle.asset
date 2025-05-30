@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Tikkle
+  m_EditorClassIdentifier: 
+  characterName: Tikkle
+  icon: {fileID: 21300000, guid: db926aa84b1686443b12f84e2a988cb7, type: 3}
+  age: 0
+  gender: 1
+  birthdate: 
+  appearance: "Olive green peel with lighter shades. Ulls grans, daurats y Brilliants,
+    que s\u2019il\xB7luminen lleugerament a la foscor. Cabells despentinats collected
+    in a munt of trains decorated with claus, ampoule taps and filferros. He carries
+    a feta armilla of remains of human stolen goods, always full of butxaques."
+  personalityTraits: 0600000003000000
+  motivations: She wants to understand human behavior through what they abandon.
+    She admires humans because deep down she would like to be their friend, but they
+    often reject her or don't understand her.
+  background: "Tikkle grew up on the edge of the forest, in a goblin community that
+    rejected the outside world. But she was always drawn to human cities and their
+    \u201Clost totems.\u201D One day she found a half-burnt book on human psychology,
+    and from then on she became obsessed with understanding what makes humans laugh,
+    cry, get angry, or go crazy.\r\n\r\nShe began sneaking into towns at night, picking
+    up objects from dumpsters, watching families through windows, and taking notes
+    in her \u201Chuman behavior notebook,\u201D filled with drawings and crazy but
+    tender theories."
+  speechStyle: 1
+  otherInfo: 

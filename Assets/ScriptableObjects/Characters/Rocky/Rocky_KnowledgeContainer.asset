@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e21849e712464a8cc2346df2ce2f97, type: 3}
+  m_Name: Rocky_KnowledgeContainer
+  m_EditorClassIdentifier: 
+  loadMode: 1
+  saveMode: 1
+  saveInterval: 120
+  subFolder: Characters/Rocky
+  maxEntries: 5
+  summary: The player has developed a method using sound waves to locate minerals,
+    including copper for electrical wiring and iron for tools and machinery. They
+    also explore Bayes' formula potentially linking it to their father's legacy,
+    finding valuable mineral deposits, and overlooking other important aspects of
+    life.
+  entries:
+  - I know that sometimes, when we're driven by a sense of inadequacy, we can overlook
+    other important aspects of life. Maybe our conversation could be the start of
+    something more...
+  - null
+  - The island has many minerals and gems hidden beneath its surface.
+  - 
+  - I've been studying the properties of light and how it interacts with matter...
+    perhaps I can find a way to use that knowledge to create something truly special.

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Rocky
+  m_EditorClassIdentifier: 
+  characterName: Rocky
+  icon: {fileID: 21300000, guid: 2e8e3e6bc55f13c4f83ded71fd610cbd, type: 3}
+  conversationPatience: 100
+  age: 21
+  gender: 0
+  birthdate: 
+  appearance: A rugged, imposing figure, always clad in dusty suspenders and stained
+    by the toil of the mines
+  personalityTraits: 0200000011000000
+  motivations: He wants to find and be able to mine the hardest mineral on the island
+    so he can show his deceased father that despite lacking vision he can be his
+    father's legacy and prove his worth.
+  background: As a child, he was never liked because, unlike his siblings (Iron and
+    Goldy), he lacked vision, making mining in the VillaAI mines impossible. Despite
+    these difficulties, Rocky developed a sense of hearing that allowed him to perceive
+    objects around him.
+  speechStyle: 1
+  otherInfo: Although his appearance is rough, as he gains confidence with those
+    close to him, his tender and protective side comes out.

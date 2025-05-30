@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da967a0ca1faba14ea2f13ad6e50edd2, type: 3}
+  m_Name: Nerea
+  m_EditorClassIdentifier: 
+  characterName: Nerea
+  icon: {fileID: 21300000, guid: 41f793adb6fecb042b280cead9241333, type: 3}
+  age: 0
+  gender: 1
+  birthdate: 
+  appearance: "Cabell llarg i ondulat de color castany amb reflexos clars pel sol,
+    gaireb\xE9 sempre humit. Pells brunes i pigues, mirada transparent de tons turquesa.
+    Camina descal\xE7a o amb sand\xE0lies de corda, amb vestits lleugers de colors
+    marins. Sempre porta una petxina gran penjada al coll."
+  personalityTraits: 
+  motivations: "Preservar la belleza y el equilibrio del litoral de la isla. Quiere
+    que la gente vuelva a amar y cuidar el mar como ella. Teme que la isla cambie
+    demasiado y el mar se convierta en s\xF3lo un recuerdo. Tiene el deseo de grabar
+    su esencia en las personas antes de que sea demasiado tarde."
+  background: "Nerea naci\xF3 en la parte m\xE1s costera de la isla, hija de un marinero
+    y una artesana. Creci\xF3 entre cuentos de sirenas, tormentas y corales. Cuando
+    ten\xEDa 10 a\xF1os, una gran ola se llev\xF3 el barco de su padre. \xC9l no
+    volvi\xF3 nunca, pero ella dice que le oye por las noches dentro del mar.\r\n\r\nDesde
+    entonces, Nerea pasa los d\xEDas caminando por la playa, recogiendo pl\xE1stico
+    y desperdicios, pero tambi\xE9n conchas y tesoros naturales. Habla con el mar
+    como si fuera un viejo amigo. Dice que le contesta."
+  speechStyle: 1
+  otherInfo: 

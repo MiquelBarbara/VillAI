@@ -1,0 +1,73 @@
+/* TemplateGraph.uss */
+
+/* GraphView background and grid */
+.unity-graph-view {
+    background-color: #2e2e2e;
+}
+
+.unity-graph-view .gridBackground {
+    /* Draw a 20x20 grid */
+    background-image:
+            linear-gradient(#3f3f3f 1px, transparent 1px),
+            linear-gradient(90deg, #3f3f3f 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Nodes styling */
+.unity-node {
+    background-color: #3c3f41;
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid #4f5356;
+}
+
+.unity-node > .title {
+    color: #ffffff;
+    font-size: 14px;
+    unity-text-align: upper-center;
+}
+
+.unity-node .text-field {
+    background-color: #313335;
+    color: #ffffff;
+    margin-top: 4px;
+    border: 1px solid #4f5356;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+/* Ports styling */
+.unity-port {
+    width: 12px;
+    height: 12px;
+    background-color: #5c5f61;
+    border-radius: 6px;
+    border: 1px solid #777;
+    margin: 2px;
+}
+
+.unity-port:hover {
+    background-color: #7c7f81;
+}
+
+/* Toolbar styling */
+.unity-toolbar {
+    background-color: #2e2e2e;
+    border-bottom: 1px solid #4f5356;
+}
+
+.unity-toolbar .unity-object-field {
+    color: #ffffff;
+}
+
+.unity-toolbar .unity-button {
+    background-color: #4f5356;
+    color: #ffffff;
+    margin-left: 4px;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.unity-toolbar .unity-button:hover {
+    background-color: #6f7376;
+}

@@ -16,4 +16,4 @@ If you have any questions, ideas, or encounter issues, feel free to reach out at
 
 ---
 
-Thanks for checking out **VillAI** — where AI meets gameplay in a new and immersive way!
+Thanks for checking out **VillAI**

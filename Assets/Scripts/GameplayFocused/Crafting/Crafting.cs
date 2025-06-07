@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Handles crafting functionality in the game.
+/// </summary>
 public class Crafting : MonoBehaviour
 {
     [SerializeField] ItemContainer inventory;
@@ -12,17 +16,14 @@ public class Crafting : MonoBehaviour
             return;
         }
 
-        for(int i = 0; i < recipe.elements.Count; i++)
+        if (recipe.elements.Any(t => inventory.CheckItem(t) == false))
         {
-            if (inventory.CheckItem(recipe.elements[i]) == false)
-            {
-                return;
-            }
+            return;
         }
         
-        for(int i = 0; i < recipe.elements.Count; i++)
+        foreach (var t in recipe.elements)
         {
-            inventory.Remove(recipe.elements[i].item, recipe.elements[i].amount);
+            inventory.Remove(t.item, t.amount);
         }
 
         inventory.Add(recipe.output.item, recipe.output.amount);

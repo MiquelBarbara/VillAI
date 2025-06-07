@@ -2,6 +2,9 @@
 
 namespace EntitiesRelated.Animation
 {
+    /// <summary>
+    /// Interface for receiving and processing animation commands.
+    /// </summary>
     public interface IAnimationCommandReceiver
     {
         bool IsPlayingAnimation();

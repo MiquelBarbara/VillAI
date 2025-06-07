@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Blackboard_Architecture;
 using EntitiesRelated.Interaction.Interactables.Implementations;
 using LLM.Services;
 using LLM.Templates;
 using NPCs;
 using Systems.SaveSystem.Memory;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityServiceLocator;
 using Utilities.ScriptableObjectExtensions;

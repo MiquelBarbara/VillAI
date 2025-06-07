@@ -4,7 +4,9 @@ using Utilities.EnumExtensions;
 
 namespace LLM.Templates
 {
-    
+    /// <summary>
+    /// Represents a configuration for a language model, including its definition, temperature setting, and parameters.
+    /// </summary>
     [CreateAssetMenu(fileName = "ModelConfig", menuName = "LLM/ModelConfig")]
     public class ModelConfig: ScriptableObject
     {

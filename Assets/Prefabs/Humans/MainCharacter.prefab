@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1194140291
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -483388435, guid: c521d3f8a85fc8340a54ad335e34aef4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1194140291
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -263003970, guid: 842a0032adfd93e45837f573f6e30f1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -239,7 +239,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1194140291
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -640769087, guid: a3eb762077abf984ea27b65aff37d690, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -420,9 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c375d80b4d46629c1dd7ba94d53933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 3f6db66182a9e144ca2320be40580d73, type: 2}
-  inventory: {fileID: 11400000, guid: 65684ca2a07b4ef47b908ca8d794009e, type: 2}
-  _currency: {fileID: 11400000, guid: 79db7586f6e86be47abb2c8e147c01ee, type: 2}
 --- !u!114 &7242621077597427724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,8 +504,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2985321070290559794}
-        m_TargetAssemblyTypeName: CharacterController2D, Assembly-CSharp
+      - m_Target: {fileID: 7242621077597427724}
+        m_TargetAssemblyTypeName: EntitiesRelated.MainCharacter.CharacterInteractController,
+          Assembly-CSharp
         m_MethodName: Interact
         m_Mode: 0
         m_Arguments:
@@ -522,7 +520,19 @@ MonoBehaviour:
     m_ActionId: 0c9f8a7d-04d2-4a55-bd68-5ceb3bf52d19
     m_ActionName: Player/Interact[/Keyboard/e]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.UIManager, Assembly-CSharp
+        m_MethodName: TogglePauseMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f755f1fc-978a-4393-b6a3-73aedcb2366f
     m_ActionName: UI/ExitMenu[/Keyboard/escape]
   - m_PersistentCalls:
@@ -574,5 +584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c4fbc30f734ed59121b8643464d99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  summaryPromptDefinition: {fileID: 0}
   Key: 
   _resources: []

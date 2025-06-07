@@ -8,6 +8,9 @@ using UnityEngine;
 
 namespace LLM.Utilities
 {
+    /// <summary>
+    /// Utility class for parsing JSON strings to .NET objects and vice versa.
+    /// </summary>
     public static class JsonParser
     {
         private static readonly JsonSerializerSettings _settings = new JsonSerializerSettings

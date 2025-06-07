@@ -2,6 +2,9 @@
 {
     using System;
 
+    /// <summary>
+    /// Attribute to mark methods as tool methods.
+    /// </summary>
     [AttributeUsage(AttributeTargets.Method, Inherited = false)]
     public class ToolMethodAttribute : Attribute
     {

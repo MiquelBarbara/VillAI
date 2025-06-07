@@ -7,6 +7,9 @@ using UnityEngine.Serialization;
 
 namespace UI
 {
+    /// <summary>
+    /// TypeOutText is a MonoBehaviour that simulates typing out text in a UI element.
+    /// </summary>
     public class TypeOutText: MonoBehaviour
     {
         [SerializeField] TMP_Text tmpText;

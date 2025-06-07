@@ -8,52 +8,57 @@ using Utilities.ScriptableObjectExtensions;
 namespace Systems.SaveSystem.Memory
 {
     [CreateAssetMenu(fileName = "ConversationContainer", menuName = "Resources/Conversations/ConversationContainer")]
-    public class ConversationContainer: ScriptableSave
+    public class ConversationContainer : ScriptableSave
     {
-        [SerializeField] List<ConversationGroup> conversations = new();
-        
+        [SerializeField] private List<ConversationGroup> conversations = new();
+
         public ConversationGroup FilterByCharacter(string character)
         {
             return conversations.Find(c => c.withCharacter == character);
         }
-        
+
         public List<string> GetAllSummaries(string characterName)
         {
             return FilterByCharacter(characterName)?.GetAllSumaries();
         }
-        
+
         public void InsertIntoGroup(List<ConversationEntry> conversation, string characterName)
         {
             ConversationGroup group = conversations.Find(c => c.withCharacter == characterName);
             if (group == null)
             {
-                group = CreateGroup(characterName);
+                group = CreateGroupRuntime(characterName);
+                conversations.Add(group);
+
+                #if UNITY_EDITOR
+                AssetDatabase.AddObjectToAsset(group, this);
+                EditorUtility.SetDirty(this);
+                AssetDatabase.SaveAssets();
+                #endif
             }
+
             group.AddConversation(conversation);
+
+            #if UNITY_EDITOR
+            EditorUtility.SetDirty(group);
             AssetDatabase.SaveAssets();
+            #endif
         }
-        
-        
-        #if UNITY_EDITOR
-        
-        public ConversationGroup CreateGroup(string characterName)
+
+        public ConversationGroup CreateGroupRuntime(string characterName)
         {
-            ConversationGroup group = CreateInstance<ConversationGroup>();
+            ConversationGroup group = ScriptableObject.CreateInstance<ConversationGroup>();
             group.name = $"Group_{characterName}";
             group.withCharacter = characterName;
-        
-            // Add as subasset
-            AssetDatabase.AddObjectToAsset(group, this);
-            conversations.Add(group);
-        
-            AssetDatabase.SaveAssets();
             return group;
         }
-        
+
+        #if UNITY_EDITOR
         public ConversationGroup RemoveGroup(string characterName)
         {
             ConversationGroup group = conversations.Find(c => c.withCharacter == characterName);
             if (group == null) return group;
+
             conversations.Remove(group);
             AssetDatabase.RemoveObjectFromAsset(group);
             DestroyImmediate(group, true);

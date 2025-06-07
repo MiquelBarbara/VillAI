@@ -10,6 +10,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using LLM.Utilities;
 
+/// <summary>
+/// ToolClient is a Unity MonoBehaviour that acts as a TCP server to handle tool requests.
+/// </summary>
 public class ToolClient : MonoBehaviour
 {
      [SerializeField] private int port = 8080;
@@ -39,6 +42,10 @@ public class ToolClient : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Listens for incoming TCP requests and handles them asynchronously.
+    /// </summary>
+    /// <param name="ct"></param>
     private async Task ListenForRequests(CancellationToken ct)
     {
         while (isRunning && !ct.IsCancellationRequested)
@@ -60,6 +67,11 @@ public class ToolClient : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles an individual TCP client connection, reading the request and sending a response.
+    /// </summary>
+    /// <param name="client"> The TCP client to handle.</param>
+    /// <param name="ct"> Cancellation token to allow graceful shutdown.</param>
     private async Task HandleClient(TcpClient client, CancellationToken ct)
     {
         try
@@ -86,6 +98,11 @@ public class ToolClient : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Processes the incoming JSON request, invokes the appropriate tool, and returns a JSON response.
+    /// </summary>
+    /// <param name="jsonBody"> The JSON body of the request containing tool name and inputs.</param>
+    /// <returns> A JSON response indicating success or failure.</returns>
     private string ProcessRequest(string jsonBody)
     {
         try

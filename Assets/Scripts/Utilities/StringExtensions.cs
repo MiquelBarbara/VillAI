@@ -18,6 +18,11 @@ public static class StringExtensions
         return unchecked((int)hash);
     }
 
+    /// <summary>
+    ///   Splits a string into sentences based on punctuation marks.
+    /// </summary>
+    /// <param name="input"> The input string to split into sentences.</param>
+    /// <returns> A list of sentences extracted from the input string.</returns>
     public static List<string> SplitStringIntoSentences(string input)
     {
         input = input.Trim('"');

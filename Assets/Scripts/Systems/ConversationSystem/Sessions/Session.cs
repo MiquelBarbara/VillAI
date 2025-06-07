@@ -5,7 +5,9 @@ using EntitiesRelated.Core.Data;
 using HistoryManagment;
 
 
-
+/// <summary>
+/// Represents a participant in a session, containing character data, willingness to finish, and patience level.
+/// </summary>
 public class ParticipantData
 {
     public Character Character { get; }

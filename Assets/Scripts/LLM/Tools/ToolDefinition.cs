@@ -5,6 +5,9 @@ using Utilities.EnumExtensions;
 
 namespace LLM.Tools
 {
+    /// <summary>
+    /// Represents a tool definition for a language model, including its name, description, and method information.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewToolDescriptor", menuName = "LLM/Tool Descriptor")]
     [Serializable]
     public class ToolDefinition : EnumScriptableObject
@@ -22,6 +25,9 @@ namespace LLM.Tools
         [NonSerialized] private Type cachedType;
         [NonSerialized] private MethodInfo cachedMethod;
 
+        /// <summary>
+        /// Caches the method information based on the class and method names.
+        /// </summary>
         public void CacheMethodInfo()
         {
             if (cachedMethod != null) return;

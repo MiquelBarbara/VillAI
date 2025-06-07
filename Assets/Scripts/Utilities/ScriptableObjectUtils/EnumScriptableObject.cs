@@ -1,8 +1,10 @@
 namespace Utilities.EnumExtensions
 {
-    // EnumScriptableObject.cs
     using UnityEngine;
 
+    /// <summary>
+    /// Base class for ScriptableObjects that represent enumerations.
+    /// </summary>
     public abstract class EnumScriptableObject : ScriptableObject
     {
         public override string ToString() => name;

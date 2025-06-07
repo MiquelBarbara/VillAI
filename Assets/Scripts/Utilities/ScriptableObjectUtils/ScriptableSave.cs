@@ -5,8 +5,12 @@ using Newtonsoft.Json;
 using UnityEditor;
 using UnityEngine;
 
+
 namespace Utilities.ScriptableObjectExtensions
 {
+    /// <summary>
+    /// Base class for ScriptableObjects that handle saving and loading data.
+    /// </summary>
     public class ScriptableSave : ScriptableObject
     {
         [Header("Save/Load Settings")]
@@ -25,27 +29,30 @@ namespace Utilities.ScriptableObjectExtensions
         public virtual string GetSavePath()
         {
             return Path.Combine(
-                Application.persistentDataPath, 
-                subFolder, 
+                Application.persistentDataPath,
+                subFolder,
                 $"{name}.json"
             );
         }
 
-        public void OnValidate()
+#if UNITY_EDITOR
+        private void OnValidate()
         {
-
             EditorUtility.SetDirty(this);
-            
+
             if (string.IsNullOrEmpty(subFolder))
             {
                 subFolder = "Saves";
             }
-            
+
             string directory = Path.GetDirectoryName(SavePath) ?? string.Empty;
-            if (Directory.Exists(directory)) return;
-            Directory.CreateDirectory(directory);
-            Debug.Log($"Created save directory: {directory}");
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+                Debug.Log($"Created save directory: {directory}");
+            }
         }
+#endif
 
         public void ChangeSaveFolder(string newFolder)
         {
@@ -55,23 +62,27 @@ namespace Utilities.ScriptableObjectExtensions
             subFolder = newFolder;
             string newPath = SavePath;
 
-            // Mover el archivo si existe
             if (!File.Exists(oldPath)) return;
+
             Directory.CreateDirectory(Path.GetDirectoryName(newPath) ?? string.Empty);
             File.Move(oldPath, newPath);
             Debug.Log($"Moved save file to: {newPath}");
         }
-        
+
         public void Save()
         {
-            if(!Directory.Exists(Path.GetDirectoryName(SavePath)))
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(SavePath));
-            }
-            string json = JsonUtility.ToJson(this, true);
             string path = SavePath;
+            string directory = Path.GetDirectoryName(path);
+
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            string json = JsonUtility.ToJson(this, true);
             File.WriteAllText(path, json);
         }
+
         public void Load()
         {
             string path = SavePath;
@@ -79,14 +90,17 @@ namespace Utilities.ScriptableObjectExtensions
             {
                 string json = File.ReadAllText(path);
                 JsonUtility.FromJsonOverwrite(json, this);
+
+                #if UNITY_EDITOR
                 AssetDatabase.Refresh();
+                #endif
             }
             else
             {
-                Debug.LogWarning($"Archivo no encontrado: {path}");
+                Debug.LogWarning($"Save file not found: {path}");
             }
         }
-        
+
         [ContextMenu("Delete Save File")]
         public void DeleteSave()
         {
@@ -94,13 +108,14 @@ namespace Utilities.ScriptableObjectExtensions
             File.Delete(SavePath);
             Debug.Log($"Deleted save file: {SavePath}");
         }
-        #if UNITY_EDITOR
+
+#if UNITY_EDITOR
         [ContextMenu("Open Save Location")]
         public void OpenSaveLocation()
         {
             EditorUtility.RevealInFinder(SavePath);
         }
-        #endif
+#endif
 
         #region Mode Handlers
         public void InitializeSaveSystem()

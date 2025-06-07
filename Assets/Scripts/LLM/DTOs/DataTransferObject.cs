@@ -6,9 +6,15 @@ using UnityEngine;
 
 namespace LLM.Templates
 {
+    /// <summary>
+    /// Represents a base class for data transfer objects (DTOs) used in the LLM system.
+    /// </summary>
     public abstract class DataTransferObject
     {
-        
+        /// <summary>
+        /// Updates the fields of the DTO with the provided outputs.
+        /// </summary>
+        /// <param name="outputs"> A dictionary containing field names and their corresponding values to update.</param>
         public void UpdateOutputs(Dictionary<string, object> outputs)
         {
             var type = GetType();

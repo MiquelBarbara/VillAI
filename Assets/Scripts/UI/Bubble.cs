@@ -7,6 +7,9 @@ using TMPro;
 
 namespace UI
 {
+    /// <summary>
+    /// Bubble is a MonoBehaviour that displays a speech bubble UI element that follows a target transform.
+    /// </summary>
     public class Bubble : MonoBehaviour
     {
         [SerializeField] private RectTransform _bubbleRectTransform;

@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Utilities.ScriptableObjectUtils
 {
+    /// <summary>
+    /// Utility class for cloning ScriptableObjects.
+    /// </summary>
     public class ScriptableObjectExtensions
     {
         public static T Clone<T>(T original) where T : ScriptableObject

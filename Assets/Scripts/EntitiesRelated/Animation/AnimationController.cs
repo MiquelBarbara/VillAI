@@ -28,6 +28,10 @@ public class AnimationController : MonoBehaviour, IAnimationCommandReceiver
         animationSync = new AnimationSync(bodyRenderer, hairRenderer, toolRenderer, hairType);
     }
 
+    /// <summary>
+    /// Checks if the current animation is playing and not idle or walking.
+    /// </summary>
+    /// <returns> True if an animation is playing, false otherwise.</returns>
     public bool IsPlayingAnimation()
     {
         if(currentAnimation == null)
@@ -36,6 +40,11 @@ public class AnimationController : MonoBehaviour, IAnimationCommandReceiver
                currentAnimation.Action != AnimationAction.walk;
     }
 
+    /// <summary>
+    /// Receives an animation command and plays the corresponding animation.
+    /// </summary>
+    /// <param name="command"> The animation command to execute.</param>
+    /// <param name="transitionDuration"> The duration of the transition to the new animation. If negative, uses the default transition duration.</param>
     public void ReceiveAnimationCommand(AnimationCommand command, float transitionDuration = -1f)
     {
         if (currentAnimation == command)
@@ -46,6 +55,10 @@ public class AnimationController : MonoBehaviour, IAnimationCommandReceiver
         animator.CrossFade(command.Action.ToString(), transDuration);
     }
 
+    /// <summary>
+    /// Updates the facing direction of the character based on the provided direction.
+    /// </summary>
+    /// <param name="direction"> The horizontal movement direction (negative for left, positive for right).</param>
     public void UpdateFacing(float direction)
     {
         animationSync.UpdateFacingDirection(direction);

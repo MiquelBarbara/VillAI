@@ -18,9 +18,9 @@ MonoBehaviour:
   subFolder: Characters/Player
   currency: 500
   slots:
-  - item: {fileID: 11400000, guid: adf34a047e688b749ba69a1ae937e1f8, type: 2}
+  - item: {fileID: 0}
     amount: 1
-  - item: {fileID: 11400000, guid: ef27f3fe3bba42e43a36874129879f00, type: 2}
+  - item: {fileID: 0}
     amount: 3
   - item: {fileID: 0}
     amount: 0

@@ -11,17 +11,10 @@ using TextAsset = UnityEngine.TextCore.Text.TextAsset;
 namespace LLM.Utilities
 {
     /// <summary>
-    ///     Utility class that generates the final prompt from a template definition and input data.
+    /// Class responsible for generating messages based on a prompt template and data transfer object.
     /// </summary>
-
     public class PromptGenerator
     {
-        
-        public PromptGenerator()
-        {
-
-        }
-        
         public List<McpMessage> GenerateMessages(PromptDefinition template, DataTransferObject data)
         {
             var messages = new List<McpMessage>();

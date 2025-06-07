@@ -5,6 +5,9 @@
     using System.Linq;
     using EntitiesRelated.Animation.Events;
 
+    /// <summary>
+    /// Handles animation events by managing a list of active events and triggering callbacks at specified normalized times.
+    /// </summary>
     public class AnimationEventHandler {
         private List<AnimationEventData> activeEvents = new List<AnimationEventData>();
         private bool animationFinishedFired = false;
@@ -19,6 +22,11 @@
             animationFinishedFired = false;
         }
 
+        /// <summary>
+        /// Updates the state of animation events based on the current frame and total frames.
+        /// </summary>
+        /// <param name="currentFrame"> The current frame of the animation.</param>
+        /// <param name="totalFrames"> The total number of frames in the animation.</param>
         public void UpdateEvents(int currentFrame, int totalFrames) {
             if (totalFrames == 0)
                 return;

@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace UI
 {
+
     public class ReactableObject : MonoBehaviour
     {
         [TextArea(0, 300)]  [SerializeField] private string Description;

@@ -52,9 +52,8 @@ namespace LLM.Services
         /// <remarks>
         /// The prediction process follows these steps:
         /// 1. Generates multi-role messages from the template
-        /// 2. Calculates context differences using IncrementalContextManager
-        /// 3. Creates a ModelContext with messages and tool descriptors
-        /// 4. Sends the context to the Python backend and handles the response
+        /// 2. Creates a ModelContext with messages and tool descriptors
+        /// 3. Sends the context to the Python backend and handles the response
         /// </remarks>
         public IEnumerator Predict(PromptDefinition templateData, DataTransferObject data, string overrideTemplate = null)
         {
@@ -67,9 +66,6 @@ namespace LLM.Services
             // 1) Generate multi-role messages
             var msgs = _promptGenerator.GenerateMessages(templateData, data);
             
-            // Calculate diff and hash
-            //var (baseHash, payloadMsgs, isDiff) = _ctxMgr.GetDiff(templateData, msgs);
-
              // 2) Create MCP context
             var ctx = new ModelContext
             {

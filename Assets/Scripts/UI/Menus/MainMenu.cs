@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 namespace UI
 {
+    /// <summary>
+    /// MainMenu is a MonoBehaviour that manages the main menu of the game.
+    /// </summary>
     public class MainMenu : MonoBehaviour
     {
         [SerializeField] private string nameMenuScene;

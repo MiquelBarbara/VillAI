@@ -9,6 +9,9 @@ using UnityEngine.Events;
 
 namespace GameplayFocused.ExtractingResource
 {
+    /// <summary>
+    /// Base class for gatherable resources in the game.
+    /// </summary>
     public abstract class GatherableResource : RegisterOnEnable<GatherableResource>, Interactable
     {
         [Header("Collection Strategy")]
@@ -42,6 +45,10 @@ namespace GameplayFocused.ExtractingResource
             ActiveObjectRegistry<T>.Unregister(this as T);
         }
 
+        /// <summary>
+        /// Attempts to gather the resource by the specified interactor.
+        /// </summary>
+        /// <param name="interactor"></param>
         protected virtual void Gather(Character interactor)
         {
             collectionStrategy?.Collect(interactor, resourceItem, transform.position);

@@ -5,10 +5,14 @@ using EntitiesRelated.Core.Data;
 using Systems.Inputs;
 using UI.Presentation.PanelText;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 namespace UI
 {
+    /// <summary>
+    /// UIManager is a MonoBehaviour that manages the user interface of the game by handling various UI components such as panels, menus, and input handling.
+    /// </summary>
     public class UIManager : Singleton<UIManager>
     {
         [Header("Panels and Menus")]
@@ -106,24 +110,18 @@ namespace UI
             yield return StartCoroutine(inputHandler.GetPlayerInput(onInputReceived));
         }
 
-        public void TogglePauseMenu()
+        public void TogglePauseMenu(InputAction.CallbackContext context)
         {
-            if (pauseMenu.gameObject.activeSelf)
-                pauseMenu.Resume();
-            else
-                pauseMenu.gameObject.SetActive(true);
+            if (context.performed)
+            {
+                pauseMenu.Toggle();
+            }
         }
-
-        public void StartNewGame()
-        {
-            mainMenu.StartNewGame();
-        }
-
+        
         public void ExitGame()
         {
             mainMenu.ExitGame();
         }
-        
         
     }
 }

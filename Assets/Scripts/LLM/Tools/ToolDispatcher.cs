@@ -6,6 +6,9 @@ using System.Reflection;
 using LLM.Tools;
 using Systems.SaveSystem.Databases;
 
+/// <summary>
+/// ToolDispatcher is responsible for managing and invoking tools defined in the ToolDatabase.
+/// </summary>
 public class ToolDispatcher : MonoBehaviour
 {
     [SerializeField] private ToolDatabase toolDatabase;
@@ -44,6 +47,14 @@ public class ToolDispatcher : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Attempts to invoke a tool method by its name with the provided inputs.
+    /// </summary>
+    /// <param name="toolName"> Name of the tool to invoke.</param>
+    /// <param name="inputs"> Dictionary of input parameters for the tool method.</param>
+    /// <param name="result"> Output parameter to hold the result of the method invocation.</param>
+    /// <returns> True if the tool was successfully invoked, false otherwise.</returns>
+    /// <exception cref="ArgumentException"> Thrown when a required parameter is missing and has no default value.</exception>
     public bool TryInvokeTool(string toolName, Dictionary<string, object> inputs, out object result)
     {
         result = null;

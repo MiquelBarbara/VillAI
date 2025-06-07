@@ -51,8 +51,6 @@ public class GoapAgent : MonoBehaviour
     public InGameCountdownTimer goalCountdownTimer;
     public InGameCountdownTimer beliefsCountdownTimer;
     public InGameCountdownTimer inventoryCountdownTimer;
-
-    private AgentInventory inventory;
     
     private void Awake()
     {

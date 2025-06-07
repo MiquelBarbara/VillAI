@@ -8,9 +8,7 @@ namespace Systems.Inputs
 {
 
     /// <summary>
-    ///     The InputHandler class manages player input by interacting with an input buffer and input panel.
-    ///     It is responsible for displaying the input panel, waiting for input, and invoking a callback with the player's
-    ///     input.
+    /// InputHandler is a MonoBehaviour that manages user input through a UI input field.
     /// </summary>
     public class InputHandler : MonoBehaviour
     {

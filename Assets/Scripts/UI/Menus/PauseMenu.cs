@@ -3,36 +3,37 @@ using UnityEngine.SceneManagement;
 
 namespace UI
 {
+    /// <summary>
+    /// PauseMenu is a MonoBehaviour that manages the game's pause menu,
+    /// </summary>
     public class PauseMenu : MonoBehaviour
     {
-        private bool _isGamePaused;
-
+        public bool _isGamePaused = false;
         private void Start()
         {
             gameObject.SetActive(false);
         }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Debug.Log("Escape key pressed");
-                if (_isGamePaused)
-                    Resume();
-                else
-                    Pause();
-            }
-        }
-
+        
         public void Resume()
         {
             gameObject.SetActive(false);
             Time.timeScale = 1f;
             _isGamePaused = false;
         }
-
-
-        private void Pause()
+        
+        public void Toggle()
+        {
+            if (_isGamePaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+        
+        public void Pause()
         {
             gameObject.SetActive(true);
             Time.timeScale = 0f;

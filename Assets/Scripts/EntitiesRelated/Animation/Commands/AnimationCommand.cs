@@ -3,6 +3,9 @@
 
 namespace EntitiesRelated.Animation.Commands
 {
+    /// <summary>
+    /// Abstract base class for animation commands.
+    /// </summary>
     public abstract class AnimationCommand
     {
         public AnimationAction Action { get; }

@@ -2,7 +2,10 @@ using EntitiesRelated.Animation.Events; using EntitiesRelated.Interaction; using
 using UnityEngine.InputSystem;
 
 namespace EntitiesRelated.MainCharacter { 
-    // Hereda de InteractController para utilizar la lógica común, añadiendo el highlighter para feedback.
+    
+    /// <summary>
+    /// Controls character interaction with objects in a 2D environment.
+    /// </summary>
     public class CharacterInteractController : InteractController
     {
         private HighlightController _highlightController;
@@ -21,6 +24,10 @@ namespace EntitiesRelated.MainCharacter {
             CheckForInteractables();
         }
         
+        /// <summary>
+        /// Initiates interaction with the detected interactable object.
+        /// </summary>
+        /// <param name="context"> The input context containing interaction data.</param>
         public void Interact(InputAction.CallbackContext context)
         {
             if (context.started)
@@ -29,6 +36,9 @@ namespace EntitiesRelated.MainCharacter {
             }
         }
 
+        /// <summary>
+        /// Interacts with the detected interactable object if one is present.
+        /// </summary>
         private void CheckForInteractables()
         {
             Interactable interactable = DetectInteractable();
@@ -42,6 +52,10 @@ namespace EntitiesRelated.MainCharacter {
             }
         }
         
+        /// <summary>
+        /// Detects the nearest interactable object within a specified area around the character.
+        /// </summary>
+        /// <returns> The first detected interactable object, or null if none are found.</returns>
         public override Interactable DetectInteractable()
         {
             Interactable interactable = base.DetectInteractable();

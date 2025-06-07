@@ -29,6 +29,7 @@ namespace GOAP.Scripts
         
         [Header("AI GOAP beliefs Prompts")]
         [SerializeField] public PromptDefinition moneyBeliefPrompt;
+        [SerializeField] public PromptDefinition inventoryBeliefPrompt;
         
     }
 }

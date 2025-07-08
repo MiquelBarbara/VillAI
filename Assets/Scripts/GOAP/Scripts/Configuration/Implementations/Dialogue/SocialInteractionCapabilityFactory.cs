@@ -23,23 +23,7 @@ namespace Game.GOAP.Scripts.Configuration.Implementations
             var blackboard = agent.BlackboardController.GetBlackboard();
             var statSystem = agent.GetComponent<StatSystem>();
             
-            
-            
-            Stat socializationStat;
-            if (!statSystem.TryGetStat("Socialization", out socializationStat))
-            {
-                var builderStat = new StatBuilderConfig()
-                    .SetKey("Socialization")
-                    .SetInitialValue(100f)
-                    .SetThresholds(30f, 50f)
-                    .SetDecayStrategy(new LinearDecayStrategy(1f))
-                    .SetIncreaseStrategy(new CappedIncreaseStrategy(80f))
-                    .SetDecreaseStrategy(new GradualDecreaseStrategy(1f))
-                    .Build();
-
-                builderStat.Configure(statSystem);
-                statSystem.TryGetStat("Socialization", out socializationStat);
-            }
+            agent.beliefFactory.AddBeliefWithPrediction("WantToSocialize", () => false, () => GOAPPromptProvider.GenericQuestion(agent, "WantToSocialize", "Do I want to talk with someone?"));
             
             var npcSensor = new TargetSensor<TalkInteract>(agent.transform, 5, 100f);
             
@@ -50,15 +34,12 @@ namespace Game.GOAP.Scripts.Configuration.Implementations
             
             agent.beliefFactory.AddBelief("NearbyAgent", () => npcSensor.IsTargetInRange);
             
-            agent.beliefFactory.AddBelief("AgentWantsToSocialize", () => socializationStat.IsLow);
-            agent.beliefFactory.AddBelief("SocializationIsHigh", () => socializationStat.IsHigh);
-            agent.beliefFactory.AddBelief("SocializationIsNormal", () => socializationStat.IsNormal);
-            
+            agent.beliefFactory.AddBelief("SocializationIsHigh", () => !agent.beliefs["WantToSocialize"].Evaluate());
             
             builder.AddAction(() =>
                 new AgentAction.Builder("SelectSocialTarget")
                     .WithCost(0.5f)
-                    .AddPrecondition(agent.beliefs["AgentWantsToSocialize"])
+                    .AddPrecondition(agent.beliefs["WantToSocialize"])
                     .AddEffect(agent.beliefs["HasSelectedTarget"])
                     .WithStrategy(new SelectWhoToTalk(agent, npcSensor))
                     .Build());
@@ -66,7 +47,7 @@ namespace Game.GOAP.Scripts.Configuration.Implementations
             builder.AddAction(() =>
                 new AgentAction.Builder("MoveToAgent")
                     .WithCost(1)
-                    .AddPrecondition(agent.beliefs["AgentWantsToSocialize"])
+                    .AddPrecondition(agent.beliefs["WantToSocialize"])
                     .AddPrecondition(agent.beliefs["HasSelectedTarget"])
                     .AddEffect(agent.beliefs["NearbyAgent"])
                     .WithStrategy(new MoveToStrategy(agent.gameObject, agent.beliefs["AvailableAgent"]))

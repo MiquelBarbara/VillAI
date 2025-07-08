@@ -37,4 +37,23 @@ MonoBehaviour:
   - Mood: 0
     Context: The message from Player_ComplexCharacterData was perceived as a friendly
       greeting, which increased Rocky's mood
+  - Mood: 0
+    Context: concerned
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: A mix of nervousness and pride at presenting his TFG
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: The air is electric, full of potential and intrigue. His eyes gleam
+      with interest as he sizes up this newcomer.
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
   actualMood: 0

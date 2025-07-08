@@ -28,7 +28,7 @@ namespace GameplayFocused.TilemapManagment
 
                 data.cropTile.growTimer += 1;
 
-                if (data.cropTile.growStage < data.cropTile.crop.cropGrowData.Length)
+                if (data.cropTile.growStage < data.cropTile.crop.cropGrowData.Length){
                 {
                     int stageTime = data.cropTile.crop.cropGrowData[data.cropTile.growStage].growthStageTime;
                     if (data.cropTile.growTimer >= stageTime)
@@ -41,7 +41,7 @@ namespace GameplayFocused.TilemapManagment
                             sr.sprite = data.cropTile.crop.cropGrowData[stageIndex].sprite;
                         }
                     }
-                }
+                }}
 
                 if (data.cropTile.Complete)
                 {

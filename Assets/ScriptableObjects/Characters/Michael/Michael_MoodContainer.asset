@@ -17,17 +17,18 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Michael
   maxEntries: 5
-  summary: Rocky's mixed emotions and desire to prove himself amidst his connection
-    with Michael lead to a newfound sense of accomplishment and pride, bridging gaps
-    in understanding abandoned technology. As he strives to create something meaningful
-    for Laia, combining cutting-edge tech with artisanal magic excites him, further
-    solidifying their bond.
+  summary: As Rocky strives to create something meaningful for Laia, combining cutting-edge
+    tech with artisanal magic excites him, further solidifying their bond. He captures
+    moments that feel special, and this device could be a whole new level of storytelling.
   entries:
   - Mood: 0
     Context: 
   - Mood: 0
-    Context: The idea of creating something for Laia, a mix of cutting-edge technology
-      and artisanal magic, excites him
+    Context: 
+  - Mood: 0
+    Context: That sounds amazing! I've always loved capturing moments that feel special,
+      and this device could be a whole new level of storytelling. Are you sure it'll
+      work with my photography style?
   - Mood: 0
     Context: 
   actualMood: 0

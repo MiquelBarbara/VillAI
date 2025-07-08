@@ -20,11 +20,10 @@ namespace GOAP.Scripts.Configuration.Implementations.Trading
             {
                 var myItems = agent.GetComponent<ResourceLocator>().Get<ItemContainer>().GetAmountByItem();
                 
-                var moneyWantedKey = agent.BlackboardController.GetBlackboard().GetOrRegisterKey("ItemsWanted");
-                agent.BlackboardController.GetBlackboard().TryGetValue(moneyWantedKey, out Dictionary<string, int> moneyWanted);
+                var itemsWantedKey = agent.BlackboardController.GetBlackboard().GetOrRegisterKey("ItemsWanted");
+                agent.BlackboardController.GetBlackboard().TryGetValue(itemsWantedKey, out Dictionary<string, int> itemsWanted);
                 
-                //For each item check if the value needed is greater than the amount we have
-                foreach (var item in moneyWanted)
+                foreach (var item in itemsWanted)
                 {
                     if (!myItems.TryGetValue(item.Key, out var amount) || (int)item.Value > (int)amount)
                     {
@@ -36,8 +35,6 @@ namespace GOAP.Scripts.Configuration.Implementations.Trading
             
             agent.beliefFactory.AddBelief("AgentHasSufficientItems", () => !agent.beliefs["AgentWantsItems"].Evaluate());
             
-            
-            // -------------OBJECTIVES-------------------//
             builder.AddGoal(() =>
                 new AgentGoal.Builder("GetItems")
                     .WithPriority(4)

@@ -17,5 +17,47 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Tikkle
   currency: 0
-  slots: []
+  slots:
+  - item: {fileID: 11400000, guid: 23d0a21682d0017489236a753dd0774d, type: 2}
+    amount: 13
+  - item: {fileID: 11400000, guid: e8ebcdd1157cfbb4b8495d0603a4dc88, type: 2}
+    amount: 7
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
+  - item: {fileID: 0}
+    amount: 0
   needUpdate: 0

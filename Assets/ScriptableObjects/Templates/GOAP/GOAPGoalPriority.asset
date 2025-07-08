@@ -27,4 +27,4 @@ MonoBehaviour:
     include the backticks in your output.\r"
   toolDescriptors: []
   resources: []
-  modelConfig: {fileID: 11400000, guid: 603ee9370f2bd3d43ae7474f9a92303b, type: 2}
+  modelConfig: {fileID: 11400000, guid: f16517241e2e33247be48d541d7133d4, type: 2}

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   templateText: 'Current money: ```{currentMoney}```
 
-    Current needed money: ```{neededMoney}```
+    Current needed money: ```{currentNeededMoney}```
 
 
     This
-    is the JSON format expected: ```{neddedMoney}```'
+    is the JSON format expected: ```{neededMoney}```'
   systemPrompt: "You are a GOAP helper, your job is to assist the agent decide beliefs.\nYou
     must output **only** a valid JSON object (no explanations, no markdown, no extra
     text).  \r\nAlways verify that your JSON starts and ends with matching braces

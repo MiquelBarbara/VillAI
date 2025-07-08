@@ -118,8 +118,15 @@ public class Session
     
     public ConversationEntry? GetLastEntry(int index = -1)
     {
-        if (_conversationEntries.Count == 0 && index < 0) return null;
-        return _conversationEntries[_conversationEntries.Count + index];
+        if (_conversationEntries == null || _conversationEntries.Count == 0)
+            return null;
+
+        int targetIndex = _conversationEntries.Count + index;
+
+        if (targetIndex < 0 || targetIndex >= _conversationEntries.Count)
+            return null;
+
+        return _conversationEntries[targetIndex];
     }
     
     public List<ConversationEntry> GetEntries() => _conversationEntries;

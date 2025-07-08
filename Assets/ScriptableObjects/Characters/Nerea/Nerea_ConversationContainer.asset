@@ -1,5 +1,46 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1822168443223685242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_470e7052
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Nerea\Conversations\Player
+  maxEntries: 10
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hola Nerea!
+    Timestamp: 42096.29
+  - Speaker: Nerea
+    Text: "Hola, Player! \xBFQu\xE9 traes entre manos hoy?"
+    Timestamp: 42353
+  - Speaker: Player
+    Text: Tengo ganas de pescar!
+    Timestamp: 43394.56
+  - Speaker: Nerea
+    Text: "\xBFPor qu\xE9 quieres pescar, amigo? \xBFHay algo especial que est\xE9s
+      buscando en el mar?"
+    Timestamp: 43750.223
+  - Speaker: Player
+    Text: Tu que crees que estoy buscando? Pescado, Nerea. Pescado
+    Timestamp: 45464.047
+  - Speaker: Nerea
+    Text: "\xBFPescado? \xBFEso es lo que siempre buscas? No entiendo. \xBFNo ves
+      c\xF3mo sufre el mar? \xBFC\xF3mo cambia d\xEDa a d\xEDa? \xBFQu\xE9 pasa con
+      las criaturas del fondo? \xBFCon los corales que se van desmoronando? \xBFY
+      no te importa eso?"
+    Timestamp: 45993.383
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,4 +57,20 @@ MonoBehaviour:
   saveMode: 1
   saveInterval: 120
   subFolder: Characters/Nerea
-  conversations: []
+  conversations:
+  - {fileID: 7265993300169322070}
+--- !u!114 &7265993300169322070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6f0ff0a0714b2295fdebd3cfbe5eee, type: 3}
+  m_Name: Group_Player
+  m_EditorClassIdentifier: 
+  withCharacter: Player
+  entries:
+  - {fileID: -1822168443223685242}

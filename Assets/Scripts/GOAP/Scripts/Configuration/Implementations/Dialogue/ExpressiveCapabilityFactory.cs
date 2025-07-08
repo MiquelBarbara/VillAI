@@ -1,16 +1,21 @@
-﻿using Game.ALPHA;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Game.ALPHA;
 using GOAP.Configuration;
 using GOAP.Scripts;
 using GOAP.Scripts.AgentStats;
 using GOAP.Scripts.AgentStats.Strategies;
 using GOAP.Scripts.Configuration.Capabilities;
+using LLM.Services;
+using NPCs;
 using UI;
 using UnityEngine;
+using UnityServiceLocator;
+using Utilities.ScriptableObjectExtensions;
+using Random = System.Random;
 
 namespace Game.GOAP.Scripts.Configuration.Implementations
 {
-
-    
     public class ExpressiveCapabilityConfig : ICapabilityConfig
     {
         public void Configure(GoapAgent agent)
@@ -18,26 +23,9 @@ namespace Game.GOAP.Scripts.Configuration.Implementations
             var builder = new CapabilityBuilder("ExpressiveCapability");
             var statSystem = agent.GetComponent<StatSystem>();
             
-            //agent.beliefFactory.AddBeliefWithPrediction("WantToExpress", () => false, "Does the agent want to express something to the world?");
+            agent.beliefFactory.AddBeliefWithPrediction("WantToExpress", () => false, () => GOAPPromptProvider.GenericQuestion(agent, "WantToExpress", "Do I want to express something?"));
             
-            Stat relive;
-            if (!statSystem.TryGetStat("Relive", out relive))
-            {
-                var builderStat = new StatBuilderConfig()
-                    .SetKey("Relive")
-                    .SetInitialValue(100f)
-                    .SetThresholds(30f, 50f)
-                    .SetDecayStrategy(new LinearDecayStrategy(1f))
-                    .SetIncreaseStrategy(new CappedIncreaseStrategy(80f))
-                    .SetDecreaseStrategy(new GradualDecreaseStrategy(1f))
-                    .Build();
-
-                builderStat.Configure(statSystem);
-                statSystem.TryGetStat("Relive", out relive);
-            }
-            
-            agent.beliefFactory.AddBelief("WantToExpress", () => relive.IsLow);
-            agent.beliefFactory.AddBelief("Relieved", () => relive.IsHigh);
+            agent.beliefFactory.AddBelief("Relieved", () => !agent.beliefs["WantToExpress"].Evaluate());
             
             var expressPoints =
                 new TargetSensor<ReactableObject>(agent.transform, 5, 10);
@@ -61,5 +49,6 @@ namespace Game.GOAP.Scripts.Configuration.Implementations
             
             builder.Build().Configure(agent);
         }
+        
     }
 }

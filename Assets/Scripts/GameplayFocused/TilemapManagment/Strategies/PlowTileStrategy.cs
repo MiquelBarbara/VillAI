@@ -48,7 +48,7 @@ namespace GameplayFocused.TilemapManagment.Strategies
         /// </returns>
         public AnimationCommand GetAnimation()
         {
-            return new IdleAnimationCommand();
+            return new DigAnimationCommand();
         }
     }
 }

@@ -17,6 +17,23 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Sans
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: Information suggests a prevailing neutral mood with occasional hints of
+    excitement and laughter, as Elian experiences a spark of joy in unexpected encounters
+    that bring him refreshment. The context also highlights the importance of combining
+    efforts to preserve the beauty of the litoral while making people laugh, incorporating
+    jokes about 'death' humor and a skeleton who walked into a bar, showcasing Raw
+    humor from Sans' boner jokes, appreciation for a place, and possibly another
+    instance of laughter, with added elements of boner jokes, someone wanting to
+    listen to his jokes, and laughter.
+  entries:
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: He loves the fact that someone wants to listen to his jokes!
+  - Mood: 0
+    Context: Laughter
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: I don't know Sans. I am a little sad...
   actualMood: 0

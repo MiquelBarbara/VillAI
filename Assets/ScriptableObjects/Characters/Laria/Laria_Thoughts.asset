@@ -17,5 +17,13 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Laria
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: I wonder if he's trying to tell me something more than just about the
+    camera... Maybe he wants me to understand the connection between technology and
+    nature, like how they can complement each other.
+  entries:
+  - I wonder what's behind his jokes... is he really just trying to make us happy
+    or is there something more?
+  - I wonder if he has any idea how much his words mean to me right now...
+  - Hmm, I wonder if he's trying to tell me something more than just about the camera...
+    Maybe he wants me to understand the connection between technology and nature,
+    like how they can complement each other.

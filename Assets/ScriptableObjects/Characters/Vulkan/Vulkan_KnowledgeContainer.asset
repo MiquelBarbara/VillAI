@@ -17,5 +17,21 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Vulkan
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: The art of blacksmithing is a harmonious blend of understanding the fire
+    that drives us, shaping our dreams into reality, and
+  entries:
+  - 
+  - 
+  - 
+  - '{"drone design": "We can use a combination of lightweight materials and advanced
+    navigation systems to create a drone that can navigate through tight spaces and
+    rubble. We''ll need to experiment with different shapes and sizes to find the
+    right balance between maneuverability and stability.", "scavenging techniques":
+    "There are many ways to scavenge for resources efficiently. We can use drones
+    to scout out areas, identify valuable materials, and even retrieve them without
+    putting ourselves at risk.", "blue''s skills": "Blue has a natural talent for
+    building and inventing. With some guidance from me, I''m sure he''ll come up
+    with something impressive."}'
+  - Stability in control systems requires careful consideration of inertial dampening
+    and thrust vectoring. We can use some of my experience with mechanical arms to
+    develop a stabilizing system...

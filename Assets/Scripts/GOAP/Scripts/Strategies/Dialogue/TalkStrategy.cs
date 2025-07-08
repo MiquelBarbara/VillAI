@@ -27,6 +27,7 @@ public class TalkStrategy : IActionStrategy
         elapsedTime = 0f;
         agent.isStopped = true; 
         interactController.Interact(interactable());
+        agent.GetComponent<GoapAgent>().beliefs["WantToSocialize"].NewCondition(() => false);
     }
 
     public void Update(float deltaTime)

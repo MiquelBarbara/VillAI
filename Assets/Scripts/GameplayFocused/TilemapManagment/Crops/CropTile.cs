@@ -46,8 +46,8 @@ namespace GameplayFocused.TilemapManagment.Crops
         {
             get 
             {
-                if (crop == null) { return false; }
-                return growTimer >= crop.timeToGrow;
+                if (crop == null || crop.cropGrowData == null) { return false; }
+                return growStage >= crop.cropGrowData.Length - 1;
             }
         }
 

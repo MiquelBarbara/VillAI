@@ -7,6 +7,7 @@ namespace GOAP.Scripts
     {
         protected MonoBehaviour provider;
         protected bool _coroutineDone = false;
+        protected bool _coroutineStarted = false;
 
         public CoroutineStrategy(MonoBehaviour provider)
         {
@@ -18,8 +19,10 @@ namespace GOAP.Scripts
             this.provider = provider.GetComponent<GoapAgent>();
         }
         
-        public virtual void Start()
+        public virtual void Update(float deltaTime)
         {
+            if (_coroutineStarted) return;
+            _coroutineStarted = true;
             Debug.Log($"Starting coroutine for {provider.name} with strategy {GetType().Name}");
             provider.StartCoroutine(Predict());
         }

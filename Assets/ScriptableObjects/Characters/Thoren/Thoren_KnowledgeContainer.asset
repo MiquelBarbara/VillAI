@@ -18,4 +18,5 @@ MonoBehaviour:
   subFolder: Characters/Thoren
   maxEntries: 5
   summary: 
-  entries: []
+  entries:
+  - The island's secrets are safe with me, I reckon.

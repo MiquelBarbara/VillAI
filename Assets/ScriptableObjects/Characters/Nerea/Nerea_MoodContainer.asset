@@ -17,6 +17,14 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Nerea
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: The character's message of 'bye' may be perceived as a separation or loss,
+    which could evoke feelings of sadness in Player. Inspired to explore, warmth,
+    and curiosity.
+  entries:
+  - Mood: 0
+    Context: Warm greeting
+  - Mood: 0
+    Context: Pescar
+  - Mood: 0
+    Context: "\xBFPor qu\xE9 mencionas pescado?"
   actualMood: 0

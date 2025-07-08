@@ -17,5 +17,10 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Nerea
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: "El mar es mi hogar, y lo protejo porque es parte de m\xED misma. Los
+    peces son importantes para mantener el equilibrio del ecosistema marino."
+  entries:
+  - 
+  - "El mar es mi hogar, y lo protejo porque es parte de m\xED misma."
+  - Los peces son importantes para mantener el equilibrio del ecosistema marino.
+  - 

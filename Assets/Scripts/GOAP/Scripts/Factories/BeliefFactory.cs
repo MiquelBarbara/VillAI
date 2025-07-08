@@ -112,8 +112,7 @@ namespace GOAP.Scripts
         }
         
 
-        public void AddBeliefWithPrediction(string key, Func<bool> condition, Func<IEnumerator> coroutine,
-            string description = "")
+        public void AddBeliefWithPrediction(string key, Func<bool> condition, Func<IEnumerator> coroutine, string description = "")
         {
             if (beliefs.ContainsKey(key)) return;
             beliefs.Add(key, new AgentBeliefPrediction.Builder(key)

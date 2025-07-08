@@ -18,5 +18,15 @@ MonoBehaviour:
   subFolder: Characters/Laria
   maxEntries: 5
   summary: 
-  entries: []
+  entries:
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: You're a real pun-master!
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
   actualMood: 0

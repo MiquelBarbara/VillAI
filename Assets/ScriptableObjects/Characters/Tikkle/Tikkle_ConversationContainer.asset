@@ -149,6 +149,21 @@ MonoBehaviour:
     Text: Aww, it was nice chatting with you! I'll keep learning about humans from
       their abandoned things. See you around, friend!
     Timestamp: 49256.086
+--- !u!114 &-621478363686667785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6f0ff0a0714b2295fdebd3cfbe5eee, type: 3}
+  m_Name: Group_Player
+  m_EditorClassIdentifier: 
+  withCharacter: Player
+  entries:
+  - {fileID: 13005950620862183}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +181,72 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Tikkle
   conversations:
-  - {fileID: 0}
+  - {fileID: -621478363686667785}
+--- !u!114 &13005950620862183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_d64b87a5
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Tikkle\Conversations\Player
+  maxEntries: 10
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hi Tickle!
+    Timestamp: 42486.332
+  - Speaker: Tikkle
+    Text: Hei, hi there! I didn't expect to see you here. What brings you to this
+      part of town? And what's with the fancy way of talking? You're not a human,
+      are you?
+    Timestamp: 43032.35
+  - Speaker: Player
+    Text: I am better than a human, I am a player.
+    Timestamp: 44397.453
+  - Speaker: Tikkle
+    Text: Well, well, well. If it isn't the Player. I've heard of you, of course.
+      You're always so... formal. I, on the other hand, am Tikkle, a curious and
+      shy goblin with a passion for understanding human behavior. What brings you
+      to my neck of the woods?
+    Timestamp: 44898.32
+  - Speaker: Player
+    Text: Just walking around.
+    Timestamp: 46762.723
+  - Speaker: Tikkle
+    Text: Hey, what's with all the walking? You don't seem to be going anywhere in
+      particular. Are you just enjoying the view or something?
+    Timestamp: 47221.094
+  - Speaker: Player
+    Text: Yes.
+    Timestamp: 47970.367
+  - Speaker: Tikkle
+    Text: Wow, a simple 'yes' from you? That's all I get after sneaking around your
+      town at night? I guess it's better than nothing. Tell me, what did you mean
+      by that? Are you acknowledging my existence or just confirming something else?
+    Timestamp: 48243.71
+  - Speaker: Player
+    Text: Can i go please?
+    Timestamp: 50432.688
+  - Speaker: Tikkle
+    Text: Aww, okay! But can you tell me what's going on? Why do you want to go?
+    Timestamp: 51586.824
+  - Speaker: Player
+    Text: It is getting late...
+    Timestamp: 52992.56
+  - Speaker: Tikkle
+    Text: What's late? Is it time for humans to get home and hide away again? I never
+      really understand their schedules. Do they have a special clock that tells
+      them when to be afraid of the dark?
+    Timestamp: 54126.523
 --- !u!114 &798192651170659380
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,20 +17,12 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Rocky
   maxEntries: 10
-  summary: The miner's struggle with Bayers' formula is mirrored by others who encounter
-    challenges. The ability to overcome obstacles through perseverance and skills
-    proves that past doubts and experiences can be overcome, potentially even proving
-    others wrong.
+  summary: The miner's struggle with Bayers' formula mirrors Vulkan's curiosity and
+    desire for connection. His actions may stem from a need to share his passion
+    for technology, potentially using it for good. Laia's photos could be a means
+    to inspire change on the island, but their understanding of each other's passions
+    may differ.
   entries:
-  - Why is she always alone? Does she know about my cabin and the camera I'm building
-    for her?
-  - I wonder what he's looking for in those mines. Is it the same thing that drives
-    him to explore and take risks?
-  - 
-  - I wonder if he'll ever understand the beauty of my camera, or if he's just going
-    to keep seeing it as a tool for his own gain.
-  - Maybe this is my chance to finally connect with someone who understands me. But
-    what if she doesn't share my passion for technology?
   - I wonder if she's ever thought about how her photos could be used to inspire
     change on this island. Perhaps I can use this opportunity to introduce her to
     my own passion for using technology for good.
@@ -38,3 +30,16 @@ MonoBehaviour:
     what he wants to achieve by building that camera for Laia... '
   - I'm not sure what's going on with this guy, but I think he might be trying to
     get my attention.
+  - Why does Vulkan always have to be so curious? Can't he just leave me alone with
+    my thoughts?
+  - Still trying to figure out this guy... Formal speech? That's not something you
+    see every day...
+  - 
+  - 
+  - I don't know why Vance has to be so condescending. Can't he just listen for once?
+    Maybe there's more to Rocky than just his lack of vision.
+  - I hope Vulkan understands where I'm coming from, he seems like someone who gets
+    me. Maybe he'll see my passion and want to help me in some way.
+  - I don't know why, but this guy seems different. He gets me. Maybe there's more
+    to life than just proving myself. Could it be that I'm not just carrying on my
+    dad's legacy, but finding my own way?

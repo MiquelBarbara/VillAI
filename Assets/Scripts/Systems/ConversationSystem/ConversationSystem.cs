@@ -382,13 +382,19 @@ namespace Systems
                 {
                     if (templateData.wantToBuy)
                     {
-                        generator.AddItem(_itemDatabase.GetByName(templateData.item_name), templateData.amount);
-                        generator.SpendMoney(templateData.amount);
+                        receiver.AddItem(_itemDatabase.GetByName(templateData.item_name), templateData.amount);
+                        receiver.SpendMoney(templateData.amount);
+                        
+                        generator.RemoveItem(_itemDatabase.GetByName(templateData.item_name), templateData.amount);
+                        generator.EarnMoney(templateData.amount);
                     }
                     else if (templateData.wantToSell)
                     {
-                        receiver.RemoveItem(_itemDatabase.GetByName(templateData.item_name), templateData.amount);
-                        receiver.EarnMoney(templateData.amount);
+                        generator.RemoveItem(_itemDatabase.GetByName(templateData.item_name), templateData.amount);
+                        generator.EarnMoney(templateData.amount);
+                        
+                        receiver.AddItem(_itemDatabase.GetByName(templateData.item_name), templateData.amount);
+                        receiver.SpendMoney(templateData.amount);
                     }
                     decisionMade = true;
                 },

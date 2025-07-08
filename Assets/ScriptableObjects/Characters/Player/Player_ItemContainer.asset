@@ -16,12 +16,12 @@ MonoBehaviour:
   saveMode: 1
   saveInterval: 120
   subFolder: Characters/Player
-  currency: 500
+  currency: 498
   slots:
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 1ea5f13667bb918459186a9e351ffbeb, type: 2}
+    amount: 6
+  - item: {fileID: 11400000, guid: 293fd68a278e3394491540484e6085fb, type: 2}
     amount: 1
-  - item: {fileID: 0}
-    amount: 3
   - item: {fileID: 0}
     amount: 0
   - item: {fileID: 0}

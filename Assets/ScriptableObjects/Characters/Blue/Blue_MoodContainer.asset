@@ -17,6 +17,12 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Blue
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: '[] of data points were recorded, with a mix of neutral and pleasure contexts.'
+  entries:
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: Pleasure
+  - Mood: 0
+    Context: 
   actualMood: 0

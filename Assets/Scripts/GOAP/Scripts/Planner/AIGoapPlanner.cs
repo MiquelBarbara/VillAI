@@ -103,7 +103,9 @@ namespace GOAP.Scripts
         
         public IEnumerator CheckBeliefs(GoapAgent agent, Dictionary<string, AgentBelief> beliefs)
         {
-            foreach (var belief in beliefs.Values)
+            var beliefList = beliefs.Values.ToList();
+            beliefList.Shuffle();
+            foreach (var belief in beliefList)
             {
                 if (belief is AgentBeliefPrediction beliefPrediction)
                 {

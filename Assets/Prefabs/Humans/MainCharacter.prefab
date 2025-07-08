@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1194140291
-  m_SortingLayer: 0
+  m_SortingLayerID: -2128276127
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -483388435, guid: c521d3f8a85fc8340a54ad335e34aef4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -154,8 +154,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1194140291
-  m_SortingLayer: 0
+  m_SortingLayerID: -2128276127
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -263003970, guid: 842a0032adfd93e45837f573f6e30f1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -238,8 +238,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1194140291
-  m_SortingLayer: 0
+  m_SortingLayerID: -2128276127
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -640769087, guid: a3eb762077abf984ea27b65aff37d690, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -567,6 +567,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 81b9d712-d864-4e55-8dae-fd4b85817a42
     m_ActionName: Player/Move2[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: eaad9cf2-488c-4a01-beab-4dfc2b13705b
+    m_ActionName: Player/Escape[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

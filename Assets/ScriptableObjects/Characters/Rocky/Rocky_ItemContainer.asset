@@ -18,12 +18,12 @@ MonoBehaviour:
   subFolder: Characters/Rocky
   currency: -3
   slots:
-  - item: {fileID: 0}
-    amount: 26
-  - item: {fileID: 0}
-    amount: 18
-  - item: {fileID: 0}
-    amount: 2
+  - item: {fileID: 11400000, guid: 9bee7b271ae10ff4d8db05bbfd291b40, type: 2}
+    amount: 9
+  - item: {fileID: 11400000, guid: 00570cf505fd2a844b0d023226480802, type: 2}
+    amount: 19
+  - item: {fileID: 11400000, guid: e8ebcdd1157cfbb4b8495d0603a4dc88, type: 2}
+    amount: 11
   - item: {fileID: 0}
     amount: 0
   - item: {fileID: 0}

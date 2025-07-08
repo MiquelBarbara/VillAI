@@ -228,6 +228,8 @@ MonoBehaviour:
   goalPrompt: {fileID: 11400000, guid: bf358b7dab5ef994f8571fb43e9722bb, type: 2}
   beliefsPrompt: {fileID: 11400000, guid: 637664b2fb9dd4e4eb96ebd56715f9d8, type: 2}
   moneyBeliefPrompt: {fileID: 11400000, guid: 21696788c90890c4a85563d661ba13d1, type: 2}
+  inventoryBeliefPrompt: {fileID: 0}
+  questionPrompt: {fileID: 11400000, guid: e839eef5f438fa94a86cd48ab06dae35, type: 2}
 --- !u!1 &93514120
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +523,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.41, y: 0.34, z: -10}
+  m_LocalPosition: {x: 0.68, y: 8.87, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1357,8 +1359,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 784242741
-  m_SortingLayer: 0
+  m_SortingLayerID: 654751013
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4769,6 +4771,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8827566420474285272, guid: 0ad62bea564412147ba19d02f990a155, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8830212197709138028, guid: 0ad62bea564412147ba19d02f990a155, type: 3}
       propertyPath: m_fontSize
       value: 30
@@ -4944,11 +4950,11 @@ PrefabInstance:
       objectReference: {fileID: 865010402}
     - target: {fileID: 4680727046301065271, guid: 3ed9d497b70b0184b93d819012d3e3d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.41
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 4680727046301065271, guid: 3ed9d497b70b0184b93d819012d3e3d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.34
+      value: 8.87
       objectReference: {fileID: 0}
     - target: {fileID: 4680727046301065271, guid: 3ed9d497b70b0184b93d819012d3e3d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5240,6 +5246,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 9012797632870763772, guid: 362fe3b45d8fb024fbe61b2e3b93258d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -701307777
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

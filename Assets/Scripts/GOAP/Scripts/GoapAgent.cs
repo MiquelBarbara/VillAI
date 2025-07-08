@@ -44,7 +44,9 @@ public class GoapAgent : MonoBehaviour
     [Header("Capabilities")]
     [SerializeField] private List<CapabilitySO> capabilitySOs;
 
-    [SerializeField] private bool poweredByAI = false;
+    [SerializeField] private bool priorityAI = false;
+    [SerializeField] private bool planningAI = false;
+    [SerializeField] private bool beliefAI = false;
     [SerializeField] private GoapFactory gFactory;
     
     public InGameCountdownTimer planCountdownTimer;
@@ -65,10 +67,20 @@ public class GoapAgent : MonoBehaviour
 
         isStopped = false;
 
-        if (!poweredByAI) return;
-        planCountdownTimer = GetInGameCountdownTimer(50, 110, ()=>aIGoapPlanner.PredictPlan(this, goals));
-        goalCountdownTimer = GetInGameCountdownTimer(40, 60, ()=>aIGoapPlanner.CheckGoalsPriority(this, goals));
-        beliefsCountdownTimer = GetInGameCountdownTimer(1, 20, () => aIGoapPlanner.CheckBeliefs(this, beliefs));
+        if (planningAI)
+        { 
+            planCountdownTimer = GetInGameCountdownTimer(50, 110, ()=>aIGoapPlanner.PredictPlan(this, goals));
+        }
+
+        if (priorityAI)
+        {
+            goalCountdownTimer = GetInGameCountdownTimer(40, 60, ()=>aIGoapPlanner.CheckGoalsPriority(this, goals));
+        }
+
+        if (beliefAI)
+        {
+            beliefsCountdownTimer = GetInGameCountdownTimer(40, 60, () => aIGoapPlanner.CheckBeliefs(this, beliefs));
+        }
     }
 
     private InGameCountdownTimer GetInGameCountdownTimer(float maxTime, float minTime, Func<IEnumerator> routine)
@@ -130,10 +142,18 @@ public class GoapAgent : MonoBehaviour
 
     private void Update()
     {
-        if (poweredByAI)
-        {
+        if (planningAI)
+        { 
             planCountdownTimer.Tick(Time.deltaTime);
+        }
+
+        if (priorityAI)
+        {
             goalCountdownTimer.Tick(Time.deltaTime);
+        }
+
+        if (beliefAI)
+        {
             beliefsCountdownTimer.Tick(Time.deltaTime);
         }
         
@@ -194,7 +214,7 @@ public class GoapAgent : MonoBehaviour
             goalsToCheck = new HashSet<AgentGoal>(goals.Where(g => g.Priority > priorityLevel));
         }
 
-        var potentialPlan = poweredByAI ? aIGoapPlanner.Plan(this, goalsToCheck) : gPlanner.Plan(this, goalsToCheck, lastGoal);
+        var potentialPlan = planningAI ? aIGoapPlanner.Plan(this, goalsToCheck) : gPlanner.Plan(this, goalsToCheck, lastGoal);
         
         if (potentialPlan != null)
             actionPlan = potentialPlan;

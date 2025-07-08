@@ -30,15 +30,12 @@ namespace GameplayFocused.TilemapManagment
             // Create and chain the tile action handlers.
             var harvestHandler = new HarvestTileHandler(tilemap, plowedTile);
             var plantHandler = new PlantTileHandler(tilemap, seededTile, cropSpritePrefab, toolbar);
-            // Additional handlers can be added as needed.
             var plowHandler = new PlowTileHandler(tilemap, plowedTile);
-            var waterHandler = new WaterTileHandler(tilemap, wateredTile);
+            
+            plowHandler.SetNext(plantHandler);
+            plantHandler.SetNext(harvestHandler);
 
-            harvestHandler.SetNext(plantHandler);
-            plantHandler.SetNext(plowHandler);
-            plowHandler.SetNext(waterHandler);
-
-            _chain = harvestHandler;
+            _chain = plowHandler;
         }
 
         /// <summary>

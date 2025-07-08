@@ -56,7 +56,7 @@ public class ExpressionStrategy : CoroutineStrategy
         }
         
         yield return UIManager.Instance.ShowBubble(provider.transform, StringExtensions.SplitStringIntoSentences(expressData.message), 5f);
-        provider.GetComponent<StatSystem>().IncreaseStat("Relive", 100);
+        provider.GetComponent<GoapAgent>().beliefs["WantToExpress"].NewCondition(() => false);
         _coroutineDone = true;
     }
     

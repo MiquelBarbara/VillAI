@@ -1,5 +1,72 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7081038406587638559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_f0e3d95f
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Sans\Conversations\Player
+  maxEntries: 10
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hello Sans
+    Timestamp: 40588.168
+  - Speaker: Sans
+    Text: Oh, a new face! Or should I say, a new skull? Ha ha, I'm Sans, the skeleton
+      with a sense of humor! What brings you to this neck of the woods?
+    Timestamp: 40819.324
+  - Speaker: Player
+    Text: I like this graveyard
+    Timestamp: 42092.465
+  - Speaker: Sans
+    Text: Ah, a graveyard, eh? Well, I've got a bone to pick with this place! Get
+      it? Bone? Ha ha ha, oh boy, I'm on fire today! What's the dealio, player friend?
+      You like cemeteries or something?
+    Timestamp: 42602.348
+  - Speaker: Player
+    Text: 'HAHAHAHAHAH you are so funny '
+    Timestamp: 44339.387
+  - Speaker: Sans
+    Text: '{"Ha! Thanks, friend! I''ve got a million of ''em. Want to hear one about
+      why the skeleton refused to go to the party?"}'
+    Timestamp: 44694.13
+  - Speaker: Player
+    Text: Okey tell me
+    Timestamp: 45775.844
+  - Speaker: Player
+    Text: Tell me the joke come on
+    Timestamp: 46835.023
+  - Speaker: Sans
+    Text: Why did the skeleton refuse to run for president? Because he had no body
+      to back his campaign! Haha, see what I did there?!
+    Timestamp: 47299.348
+--- !u!114 &-6142291064287730898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6f0ff0a0714b2295fdebd3cfbe5eee, type: 3}
+  m_Name: Group_Player
+  m_EditorClassIdentifier: 
+  withCharacter: Player
+  entries:
+  - {fileID: 1080463753202009216}
+  - {fileID: -7081038406587638559}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,4 +83,51 @@ MonoBehaviour:
   saveMode: 1
   saveInterval: 120
   subFolder: Characters/Sans
-  conversations: []
+  conversations:
+  - {fileID: -6142291064287730898}
+--- !u!114 &1080463753202009216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1676552727ed4c4cabdbb52ea972ec3e, type: 3}
+  m_Name: Conversation_cc02df3c
+  m_EditorClassIdentifier: 
+  loadMode: 0
+  saveMode: 0
+  saveInterval: 120
+  subFolder: Characters\Sans\Conversations\Player
+  maxEntries: 10
+  summary: 
+  entries:
+  - Speaker: Player
+    Text: Hello Sans
+    Timestamp: 41428.344
+  - Speaker: Sans
+    Text: Ah, a new friend! Welcome to my show, partner! *chuckles* I've got a million
+      of 'em... okay, maybe not a million, but definitely a few that'll make your
+      bones ache from laughing too hard! What's on your mind, Player? Need some comedy
+      therapy or just looking for some good old-fashioned belly laughs?
+    Timestamp: 41853.77
+  - Speaker: Player
+    Text: You seem, pretty dead men.
+    Timestamp: 43548.637
+  - Speaker: Sans
+    Text: Well, that's a new one! I've been called many things in my time, but 'pretty
+      dead men'? That's a real... um... bone-ified compliment!
+    Timestamp: 43850.957
+  - Speaker: Player
+    Text: HAHAHAHAHHAHAHAHAHAHHA, good one
+    Timestamp: 45353.29
+  - Speaker: Sans
+    Text: Hehe, glad I could bring a smile to your face! But don't get too comfortable,
+      folks. Laughter is the best medicine, after all... unless you have a rare condition,
+      of course.
+    Timestamp: 45598.914
+  - Speaker: Player
+    Text: See you later!
+    Timestamp: 47070.145

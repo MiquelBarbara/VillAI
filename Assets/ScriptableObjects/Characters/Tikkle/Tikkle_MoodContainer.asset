@@ -18,14 +18,15 @@ MonoBehaviour:
   subFolder: Characters/Tikkle
   maxEntries: 5
   summary: The story's neutral tone continues to feature moments of puzzlement, amusement,
-    and mocking, while maintaining a warm and friendly atmosphere with mixed emotions
-    about uncertainty. The unusual math problem remains a source of confusion, and
-    the tone concludes on a warmly open note.
+    mixed emotions about uncertainty, and pride. The unusual math problem remains
+    a source of confusion, with raw interaction with new characters.
   entries:
   - Mood: 0
-    Context: WarmlyOpen
+    Context: Just walking around.
   - Mood: 0
-    Context: Mixed emotions about uncertainty
+    Context: 
   - Mood: 0
-    Context: Goodbye
+    Context: 
+  - Mood: 0
+    Context: It is getting late...
   actualMood: 0

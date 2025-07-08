@@ -17,6 +17,17 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Vulkan
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: New interactions with someone who's always up for a project and enthusiastic
+    about building something that can help with scavenging, like a robotic arm that
+    adapts to different tasks. Interest sparks from learning about Vulkan's appearance,
+    personality, and background, and appreciation for new paths and designs.
+  entries:
+  - Mood: 0
+    Context: He's always up for a new project and loves the idea of building something
+      that can help with scavenging.
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: Blue's enthusiasm for building a new prototype has caught Vulkan's attention,
+      and he's intrigued to see what his young friend comes up with.
   actualMood: 0

@@ -18,4 +18,4 @@ MonoBehaviour:
   subFolder: Characters/Laria
   currency: 0
   slots: []
-  needUpdate: 0
+  needUpdate: 1

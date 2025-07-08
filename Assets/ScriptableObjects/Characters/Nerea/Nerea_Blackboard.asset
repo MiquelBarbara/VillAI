@@ -12,4 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3b9e14e36443aaa91a5e0e8907e848, type: 3}
   m_Name: Nerea_Blackboard
   m_EditorClassIdentifier: 
-  entries: []
+  entries:
+  - keyName: StoreLocation
+    valueType: 6
+    value:
+      type: 6
+      intValue: 0
+      floatValue: 0
+      boolValue: 0
+      stringValue: 
+      vector3Value: {x: 0, y: 0, z: 0}
+      gameObjectValue: {fileID: 0}
+      transformValue: {fileID: 1415698729757977907, guid: 9523354019c59b4479d7f299896d043c, type: 3}
+      behaviorValue: {fileID: 0}
+      enumValue: 
+      eventValue:
+        m_PersistentCalls:
+          m_Calls: []
+      listValue: []
+      resourceValue: {fileID: 0}
+  - keyName: MoneyWanted
+    valueType: 0
+    value:
+      type: 0
+      intValue: 100
+      floatValue: 0
+      boolValue: 0
+      stringValue: 
+      vector3Value: {x: 0, y: 0, z: 0}
+      gameObjectValue: {fileID: 0}
+      transformValue: {fileID: 1415698729757977907, guid: 9523354019c59b4479d7f299896d043c, type: 3}
+      behaviorValue: {fileID: 0}
+      enumValue: 
+      eventValue:
+        m_PersistentCalls:
+          m_Calls: []
+      listValue: []
+      resourceValue: {fileID: 0}

@@ -17,11 +17,6 @@ namespace GOAP.Scripts.Configuration.Implementations
             var storeLocationKey = blackboard.GetOrRegisterKey("StoreLocation");
             blackboard.TryGetValue(storeLocationKey, out Transform storeLocation);
             
-            //agent.beliefFactory.AddBeliefWithPrediction("AgentNeedsMoney", () => true,"Does the agent need money?");
-            agent.beliefFactory.AddBelief("AgentHasSufficientMoney", () => !agent.beliefs["AgentNeedsMoney"].Evaluate());
-            
-            //agent.beliefFactory.AddBeliefWithPrediction("AgentNeedsWork", () => true, "Does the agent still wants to work at the shop?");
-            
             agent.beliefFactory.AddLocationBelief("AgentAtWork", 2f, storeLocation);
             
             builder.AddAction(() =>
@@ -35,16 +30,16 @@ namespace GOAP.Scripts.Configuration.Implementations
                 new AgentAction.Builder("WorkAtStore")
                     .WithCost(2)
                     .AddPrecondition(agent.beliefs["AgentAtWork"])
-                    .AddPrecondition(agent.beliefs["AgentNeedsWork"])
+                    .AddPrecondition(agent.beliefs["AgentNeedsMoney"])
                     .AddEffect(agent.beliefs["AgentHasSufficientMoney"])
-                    .WithStrategy(new StoreStrategy(agent.gameObject, ()=> !agent.beliefs["AgentNeedsWork"].Evaluate())) 
+                    .WithStrategy(new StoreStrategy(agent.gameObject, ()=> agent.beliefs["AgentHasSufficientMoney"].Evaluate())) 
                     .Build());
             
             builder.AddGoal(() =>
                 new AgentGoal.Builder("EarnMoney")
                     .WithPriority(5)
-                    .WithDesiredEffect(agent.beliefs["AgentHasSufficientMoney"]).Build())
-                    .Build();
+                    .WithDesiredEffect(agent.beliefs["AgentHasSufficientMoney"])
+                    .Build());
 
             builder.Build().Configure(agent);
         }

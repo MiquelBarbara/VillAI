@@ -17,17 +17,18 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Michael
   maxEntries: 5
-  summary: A person reflects on their connection with Laia, wondering if a new camera
-    could deepen their bond. They're cautious about revealing too much information
-    to someone they don't fully understand. The individual yearns for genuine connections
-    and feels frustrated when others focus solely on appearance or material gain.
+  summary: A person's desire for genuine connection and understanding leads them
+    to question their relationships, including one with Laia. They seek common ground,
+    but are cautious about revealing too much, feeling frustrated when others prioritize
+    appearance or material gain over deeper connections. The desire for connection
+    and understanding also drives them to consider the potential for shared interests
+    with someone like Rocky, despite initial reservations.
   entries:
-  - Why does everyone think I'm just about appearance? Don't they see the real me?
-  - Why is it always about mining and minerals with him? Can't he see there's more
-    to life than just finding the next big thing?
-  - What does he want? Is he looking for trouble? Why doesn't he just leave me alone?
-  - He thinks I care about him... but why should I? He's always so focused on his
-    own goals, just like everyone else. I don't want to be like that, but it's hard
-    to connect with anyone who doesn't understand where I'm coming from.
-  - I wonder if she'll like the camera I've been building for her? It's not just
-    about taking pictures, it's about capturing the feeling of the moment...
+  - I wonder if he'll understand what I mean by 'reinventing technology'. Rocky seems
+    a bit rough around the edges, but maybe there's more to him than that.
+  - I'm excited to finally talk to her, maybe she'll understand my project and appreciate
+    the effort I put into it. Laia seems like someone who appreciates beauty in nature.
+  - I never thought anyone would be interested in my project. I was starting to think
+    that Laia and her photography were too different from what I'm trying to do with
+    this camera. But maybe there's more to our shared interests than I initially
+    thought.

@@ -18,5 +18,15 @@ MonoBehaviour:
   subFolder: Characters/Vance
   maxEntries: 5
   summary: 
-  entries: []
+  entries:
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: The formal greeting from a stranger, unexpected in its politeness.
+  - Mood: 0
+    Context: 
   actualMood: 0

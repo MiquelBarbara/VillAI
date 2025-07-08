@@ -17,6 +17,16 @@ MonoBehaviour:
   saveInterval: 120
   subFolder: Characters/Elian
   maxEntries: 5
-  summary: 
-  entries: []
+  summary: Sans' humor brings a smile to Elian's face, reminding him of his carefree
+    days in nature. The earth whispers secrets to me through the flames, sensing
+    a kindred spirit in Elian, who shows enthusiasm for collaboration.
+  entries:
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: Enthusiasm for collaboration
+  - Mood: 0
+    Context: 
+  - Mood: 0
+    Context: 
   actualMood: 0

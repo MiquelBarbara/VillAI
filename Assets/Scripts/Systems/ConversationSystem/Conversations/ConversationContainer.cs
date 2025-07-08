@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using HistoryManagment;
+using JetBrains.Annotations;
 using Systems.SaveSystem.Memory.Conversations;
 using UnityEditor;
 using UnityEngine;
@@ -11,10 +12,15 @@ namespace Systems.SaveSystem.Memory
     public class ConversationContainer : ScriptableSave
     {
         [SerializeField] private List<ConversationGroup> conversations = new();
+        public List<ConversationGroup> Conversations => conversations ??= new List<ConversationGroup>();
 
+
+        [CanBeNull]
         public ConversationGroup FilterByCharacter(string character)
         {
-            return conversations.Find(c => c.withCharacter == character);
+            return Conversations == null || Conversations.Count == 0
+                ? null
+                : Conversations.Find(c => c.withCharacter == character);        
         }
 
         public List<string> GetAllSummaries(string characterName)
